@@ -21,8 +21,8 @@ export default {
   		},
 		keyframes: {
 			scaleFade: {
-			  '0%': { transform: 'scale(0.25)', opacity: '0.25' },
-			  '100%': { transform: 'scale(.75)', opacity: '0.5' },
+			  '0%': { transform: 'scale(0.25)', opacity: '0.25' , transformOrigin: 'center'},
+			  '100%': { transform: 'scale(.75)', opacity: '0.5' , transformOrigin: 'center'},
 			},
 		  },
 		animation: {

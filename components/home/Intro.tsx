@@ -56,8 +56,8 @@ const Intro = (props: Props) => {
           <div className="flex items-center gap-3">
             {/* Pulse Animation */}
             <div className="w-7 h-7 relative">
-              <div className=" w-2 h-2 rounded-full bg-monochrome90 absolute top-1/2 left-[51%] -translate-x-1/2 -translate-y-1/2 z-10"></div>
-              <div className="w-7 h-7 rounded-full bg-matchaBad absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 animate-scaleFade"></div>
+              <div className=" w-2 h-2 rounded-full bg-monochrome90 absolute top-1/2 2xl:left-1/2  left-[90%] -translate-x-1/2 -translate-y-1/2 z-10"></div>
+              <div className="w-7 h-7 rounded-full bg-matchaBad absolute top-0 left-0 animate-scaleFade"></div>
             </div>
             <p className=" font-medium text-base leading-[21.6px]">
               Exploring new opportunities
@@ -65,7 +65,7 @@ const Intro = (props: Props) => {
           </div>
           <div className="flex flex-col gap-6">
             {data.map((data) => (
-              <div className="flex items-center px-3 gap-4">
+              <div key={data.name} className="flex items-center px-3 gap-4">
                 <Image src={data.url} width={40} height={45} alt="softeko" />
                 <div className="flex flex-col font-medium">
                   <h4 className="text-black text-xl">{data.name}</h4>
