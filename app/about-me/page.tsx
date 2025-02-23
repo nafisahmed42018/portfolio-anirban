@@ -4,7 +4,9 @@ type Props = {}
 
 const AboutPage = (props: Props) => {
   return (
-    <main className="pt-[80px] font-[family-name:var(--font-plus-jakarta-sans)]"></main>
+    <main className="pt-[80px] font-[family-name:var(--font-plus-jakarta-sans)]">
+      
+    </main>
   )
 }
 
