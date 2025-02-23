@@ -32,9 +32,12 @@ const Testimonials = (props: Props) => {
         </h3>
         {/* Content Box */}
         <div className="flex items-center justify-center gap-9">
-          {testimonials.map((testimonial) => (
+          {testimonials.map((testimonial, index) => (
             // Content Card
-            <div className=" flex flex-col items-start justify-center gap-6 border-none px-[42px] py-[51px] bg-monochrome90 relative">
+            <div
+              key={index}
+              className=" flex flex-col items-start justify-center gap-6 border-none px-[42px] py-[51px] bg-monochrome90 relative"
+            >
               <TestimonialQuote styleProps={'absolute top-0 left-0'} />
               <p className=" font-medium text-xl">{testimonial.desc}</p>
               <div className="flex items-center gap-6">

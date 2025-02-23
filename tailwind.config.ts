@@ -9,7 +9,9 @@ export default {
   ],
   theme: {
   	extend: {
-  		
+		backgroundImage: {
+			'hero-pattern': "url('/heroBackground.png')",
+		  },
   		container: {
   			center: true,
   			screens: {
@@ -24,9 +26,15 @@ export default {
 			  '0%': { transform: 'scale(0.25)', opacity: '0.25' , transformOrigin: 'center'},
 			  '100%': { transform: 'scale(.75)', opacity: '0.5' , transformOrigin: 'center'},
 			},
+			mouseMove: {
+				'0%': { transform: 'translateY(-10%)', transformOrigin: 'center' },
+				'100%': { transform: 'translateY(10%)', transformOrigin: 'center' },
+			  },
+			  
 		  },
 		animation: {
 			scaleFade: 'scaleFade 1.5s ease-in-out infinite',
+			mouseMove: 'mouseMove 1s ease-in-out infinite alternate',
 		  },
   		colors: {
   			background: 'hsl(var(--background))',
@@ -71,6 +79,7 @@ export default {
   			},
         link:'hsla(var(--link))',
         monochrome00:'hsl(var(--monochrome-00))',
+        monochrome30:'hsl(var(--monochrome-30))',
         monochrome90:'hsl(var(--monochrome-90))',
         monochrome110:'hsl(var(--monochrome-110))',
         matcha20:'hsl(var(--matcha-20))',

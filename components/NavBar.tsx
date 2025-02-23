@@ -1,12 +1,14 @@
+'use client'
 import Link from 'next/link'
 import React from 'react'
 import NavLogo from './NavLogo'
 import { Button } from './ui/button'
 import { LucideSquareArrowOutUpRight } from 'lucide-react'
-
+import { useRouter } from 'next/navigation'
 type Props = {}
 
 const NavBar = (props: Props) => {
+  const router = useRouter()
   return (
     <header
       className={`flex py-4 shadow-md fixed top-0 w-full z-10 bg-background/95 font-[family-name:var(--font-plus-jakarta-sans)]`}
@@ -33,6 +35,7 @@ const NavBar = (props: Props) => {
           <Button
             variant={'common'}
             className="xl:flex hidden px-[24px] py-[10px]"
+            onClick={() => router.push('/contact')}
           >
             Let's Connect
           </Button>
