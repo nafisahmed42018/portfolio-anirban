@@ -13,6 +13,7 @@ const workData = [
       'This victory will forever stand as a testament to the power of teamwork, the strength of character, and the universal language of sport that transcends boundaries and inspires millions.',
     projectType: 'Website/SAAS',
     workImageURL: '/work-invoicegen.png',
+    href: '/invoice-generator',
   },
   {
     workTitle: 'Songjog Caregiver',
@@ -23,6 +24,7 @@ const workData = [
       'This victory will forever stand as a testament to the power of teamwork, the strength of character, and the universal language of sport that transcends boundaries and inspires millions.',
     projectType: 'App/SAAS',
     workImageURL: '/work-songjog.png',
+    href: '/songjog',
   },
   {
     workTitle: 'Oxfo.com',
@@ -32,6 +34,7 @@ const workData = [
       'This victory will forever stand as a testament to the power of teamwork, the strength of character, and the universal language of sport that transcends boundaries and inspires millions.',
     projectType: 'Website',
     workImageURL: '/work-oxfo.png',
+    href: '/oxfo-tech',
   },
   {
     workTitle: 'Beditor',
@@ -41,6 +44,7 @@ const workData = [
       'This victory will forever stand as a testament to the power of teamwork, the strength of character, and the universal language of sport that transcends boundaries and inspires millions.',
     projectType: 'Desktop Application',
     workImageURL: '/work-beditor.png',
+    href: '/beditor',
   },
   {
     workTitle: 'Safewheel Redesign',
@@ -50,6 +54,7 @@ const workData = [
       'This victory will forever stand as a testament to the power of teamwork, the strength of character, and the universal language of sport that transcends boundaries and inspires millions.',
     projectType: 'Website & Mobile App',
     workImageURL: '/work-safewheel.png',
+    href: '/safewheel',
   },
 ]
 
@@ -65,6 +70,7 @@ const WorkContainer = (props: Props) => {
             workDesc={work.workDesc}
             projectType={work.projectType}
             workImageURL={work.workImageURL}
+            href={work.href}
           />
         ))}
       </div>

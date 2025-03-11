@@ -1,6 +1,8 @@
+'use client'
 import Image from 'next/image'
 import React from 'react'
 import { Button } from '../ui/button'
+import { useRouter } from 'next/navigation';
 
 type workDataProps = {
   workTitle: string
@@ -9,7 +11,9 @@ type workDataProps = {
   workDesc: string
   projectType: string
   workImageURL: string
+  href: string
 }
+
 
 const WorkCard = ({
   workTitle,
@@ -18,7 +22,13 @@ const WorkCard = ({
   workDesc,
   projectType,
   workImageURL,
+  href
 }: workDataProps) => {
+  const router = useRouter();
+
+  const handleNavigation = (href:string) => {
+    router.push(`work/${href}`); // Navigate to /dashboard
+  };
   return (
     <div className="flex items-start justify-center gap-9 text-white">
       {/* Left Section */}
@@ -80,6 +90,7 @@ const WorkCard = ({
           <Button
             variant={'common'}
             className="h-full rounded-[100px] px-8 py-[14px] font-semibold text-base leading-[20.16px]"
+            onClick={()=>handleNavigation(href)}
           >
             View Case Study
           </Button>

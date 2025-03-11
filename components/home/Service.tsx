@@ -64,7 +64,7 @@ const Service = (props: Props) => {
               <LucideArrowRight
                 width={20}
                 height={20}
-                className=" mt-1 group-hover:translate-x-1 group-hover:animate-in duration-500"
+                className=" mt-1 group-hover:translate-x-1 group-hover:animate duration-500"
               />
             </div>
           </div>

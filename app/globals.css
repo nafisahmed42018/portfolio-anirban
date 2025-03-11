@@ -5,7 +5,17 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-
+table,
+th,
+td {
+  border: 1px solid #383838;
+  border-collapse: collapse;
+}
+td {
+  padding: 8px 12px;
+  text-align: start;
+  align-self: start;
+}
 @layer base {
   :root {
     --background: 40 60% 98%;

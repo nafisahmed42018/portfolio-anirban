@@ -3,6 +3,8 @@ import Link from 'next/link'
 import React from 'react'
 import { Button } from './ui/button'
 import { usePathname } from 'next/navigation'
+import Image from 'next/image'
+
 type Props = {}
 
 const Footer = (props: Props) => {
@@ -12,19 +14,21 @@ const Footer = (props: Props) => {
   const defaultStyle = 'bg-monochrome110 text-monochrome00'
   return (
     <footer
-      className={`px-[120px] pt-[84px] pb-[56px] font-[family-name:var(--font-plus-jakarta-sans)] ${
+      className={`px-[120px] pt-[84px] pb-[56px]  font-[family-name:var(--font-plus-jakarta-sans)] ${
         defaultPages.includes(pathname)
           ? 'bg-monochrome00 text-monochrome90'
           : defaultStyle
       }`}
     >
-      <div className="flex flex-col gap-10">
+      <div className="container flex flex-col gap-10">
         {/* Top - Salutaions */}
         <div className="flex items-center justify-between">
           <div className="flex flex-col gap-[10px] font-semibold text-5xl">
             <div className="flex items-center justify-start gap-6">
               {' '}
-              <div className="w-[60px] h-[60px] rounded-full bg-gray-700 border"></div>
+              <div className="w-[60px] h-[60px] rounded-full">
+                <Image src='/testimonials/Pieter_profile3.png' width={64} height={64} alt='Anirban'/>
+              </div>
               <p className="">Thank You</p>
             </div>
             <div>
