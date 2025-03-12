@@ -12,8 +12,8 @@ const ProjectPara: React.FC<ProjectParaProps> = ({
   className,
 }) => {
   return (
-    <div className="flex flex-col gap-4 items-start justify-center text-[#474747]">
-      <h3 className="text-3xl font-semibold text-matcha60">{title}</h3>
+    <div className="flex flex-col gap-4 items-start justify-center text-lg leading-[1.5] text-[#474747]">
+      <h3 className="!text-2xl font-semibold text-matcha60">{title}</h3>
       {children}
     </div>
   );

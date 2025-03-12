@@ -63,13 +63,21 @@ const Footer = (props: Props) => {
         <div className="flex items-center justify-start gap-10 ">
           <Button
             variant={'common'}
-            className="text-lg font-semibold flex items-center h-12 px-7"
+            className={`text-lg font-semibold flex items-center h-12 px-7 ${
+              defaultPages.includes(pathname)
+                ? 'text-monochrome90 border-[2px] border-monochrome90 '
+                : 'text-monochrome00 bg-monochrome110 border-[1.5px] border-monochrome00 '
+            }`}
           >
             {'anirban.tasfin.azad@gmail.com'}
           </Button>
           <Button
             variant={'common'}
-            className="text-lg font-semibold flex items-center h-12 px-7"
+            className={`text-lg font-semibold flex items-center h-12 px-7 ${
+              defaultPages.includes(pathname)
+                ? 'text-monochrome90 border-[2px] border-monochrome90 '
+                : 'text-monochrome00 bg-monochrome110 border-[1.5px] border-monochrome00 '
+            }`}
           >{`+880 192 621 4838`}</Button>
         </div>
         {/* Bottom - Copyright & Socials */}
