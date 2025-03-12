@@ -24,12 +24,12 @@ const Contact = (props: Props) => {
           <span className=" text-matchaBase">Next project</span>
         </h3>
         {/* Buttons */}
-        <div className=" flex items-center justify-center gap-8 font-medium text-lg leading-[22.7px]">
-          <Button className="flex items-center gap-5 rounded-none px-[28px] py-[16.5px] text-monochrome00 bg-monochrome90 hover:text-monochrome90 hover:bg-monochrome00">
-            <LucideMail width={24} height={24} />
+        <div className=" flex items-center justify-center gap-8 leading-[22.7px]">
+          <Button className="flex items-center gap-5 rounded-none px-7 h-12 font-medium text-lg text-monochrome00 bg-monochrome90 hover:text-monochrome90 hover:bg-monochrome00">
+            <LucideMail className="!size-6" />
             <p>Email Me</p>
           </Button>
-          <Button className="rounded-none px-[28px] py-[17px] text-monochrome90 bg-monochrome00 border-[1.5px] border-monochrome90 hover:text-monochrome00 hover:bg-monochrome90">
+          <Button className="rounded-none px-7 h-12 font-medium text-lg text-monochrome90 bg-monochrome00 border-[1.5px] border-monochrome90 hover:text-monochrome00 hover:bg-monochrome90">
             Direct Message
           </Button>
         </div>

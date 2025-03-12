@@ -81,7 +81,7 @@ export default function ContactBody() {
                   placeholder="First"
                   value={form.firstName}
                   onChange={handleChange}
-                  className="rounded-none px-4 py-3 h-[46px]"
+                  className="rounded-none px-4 py-3 h-[46px] focus:border-matcha60"
                   required
                 />
                 <Input
@@ -90,7 +90,7 @@ export default function ContactBody() {
                   placeholder="Last"
                   value={form.lastName}
                   onChange={handleChange}
-                  className="rounded-none px-4 py-3 h-[46px]"
+                  className="rounded-none px-4 py-3 h-[46px] focus:border-matcha60"
                   required
                 />
               </div>
@@ -109,7 +109,7 @@ export default function ContactBody() {
                 value={form.email}
                 onChange={handleChange}
                 required
-                className=" rounded-none px-4 py-3 h-[46px]"
+                className=" rounded-none px-4 py-3 h-[46px] focus:border-matcha60"
               />
             </div>
 
@@ -126,13 +126,13 @@ export default function ContactBody() {
                 value={form.message}
                 onChange={handleChange}
                 required
-                className=" rounded-none px-4 py-3 h-[234px]"
+                className=" rounded-none px-4 py-3 h-[234px] focus:border-matcha60"
               />
             </div>
 
             <Button
               type="submit"
-              className="w-fit px-9 py-3 rounded-none hover:bg-[#ccf5b5d2]  self-center bg-[#CEE9BF] text-monochrome110 font-semibold tracking-[5%] text-base leading-[20.16px]"
+              className="w-fit px-9 py-3 rounded-none hover:bg-matcha20 self-center bg-[#CEE9BF] text-monochrome110 font-semibold tracking-[5%] text-base leading-[20.16px]"
             >
               SEND!
             </Button>
