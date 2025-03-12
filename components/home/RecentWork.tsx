@@ -6,9 +6,9 @@ type Props = {}
 
 const works = [
   {
-    url: '/home-recent-works-1.png',
-    name: 'Oxfo.com',
-    type: 'Website',
+    url: '/work-invoicegen.png',
+    name: 'invoicegenerator.biz',
+    type: 'Website/SaaS',
     year: '2024',
     description:
       'This victory will forever stand as a testament to the power of teamwork, the strength of character, and the universal language of sport that transcends boundaries and inspires millions.',
@@ -19,7 +19,7 @@ const works = [
     type: 'App/SaaS',
     year: '2023',
     description:
-      'This victory will forever stand as a testament to the power of teamwork, the strength of character, and the universal language of sport that transcends boundaries and inspires millions.',
+      'Songjog Caregiver is a platform that connects care receivers with qualified caregivers, offering features like caregiver selection, booking appointments and, customized care plans.',
   },
 ]
 
@@ -45,10 +45,10 @@ const RecentWork = (props: Props) => {
                 </h4>
                 <div className="flex items-center gap-3 text-xl font-medium">
                   <div className="px-4 py-1 border-2 border-monochrome00 rounded-[30px] text-monochrome00">
-                    <p>{work.type}</p>
+                    <p className='text-[20px]'>{work.type}</p>
                   </div>
                   <div className="px-4 py-1 border-2 border-monochrome00 bg-monochrome00 rounded-[30px] text-monochrome90">
-                    <p>{work.year}</p>
+                    <p className='text-[20px]'>{work.year}</p>
                   </div>
                 </div>
               </div>
@@ -57,7 +57,7 @@ const RecentWork = (props: Props) => {
           ))}
         </div>
         {/* Button */}
-        <Button className=" w-fit px-9 py-4 bg-transparent border-monochrome00 border-2 rounded-none hover:bg-monochrome00 hover:text-monochrome90">
+        <Button className=" w-fit h-14 px-9 py-4 text-lg font-semibold bg-transparent border-monochrome00 border-2 rounded-none hover:bg-monochrome00 hover:text-monochrome90">
           VIEW MORE
         </Button>
       </div>

@@ -34,7 +34,7 @@ const NavBar = (props: Props) => {
           </div>
           <Button
             variant={'common'}
-            className="xl:flex hidden px-[24px] py-[10px]"
+            className="xl:flex xl:items-center hidden text-base font-semibold h-10 px-7 "
             onClick={() => router.push('/contact')}
           >
             Let's Connect

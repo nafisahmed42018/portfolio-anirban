@@ -34,12 +34,10 @@ const Hobby = (props: Props) => {
           <h4 className=" text-[#383838] font-semibold text-[32px] leading-[40.32px]">
             In my spare time
           </h4>
-          <p className="max-w-[700px] text-black font-normal text-base leading-[21.6px]">
-            I enjoy music, movies, deep conversations, exercising with Pamela
-            Reif and hopefully more travelling. I enjoy music, movies, deep
-            conversations, exercising with Pamela Reif and hopefully more
-            travelling. I enjoy music, movies, deep conversations, exercising
-            with Pamela Reif and hopefully more travelling.
+          <p className="max-w-[700px] text-black font-normal text-base leading-[22px]">
+            I enjoy history, art, epistemology, and hopefully more travelling. I have a close-knit 
+            group of friends with whom I spend a lot of time. Playing the ukulele and violin helps 
+            me relax when I'm stressed. The city lights and architecture never fail to fascinate me.
           </p>
           <Image
             src="/hobby-background.png"

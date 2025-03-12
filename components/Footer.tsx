@@ -14,7 +14,7 @@ const Footer = (props: Props) => {
   const defaultStyle = 'bg-monochrome110 text-monochrome00'
   return (
     <footer
-      className={`px-[120px] pt-[84px] pb-[56px]  font-[family-name:var(--font-plus-jakarta-sans)] ${
+      className={`px-[120px] pt-[84px] pb-[56px] font-[family-name:var(--font-plus-jakarta-sans)] ${
         defaultPages.includes(pathname)
           ? 'bg-monochrome00 text-monochrome90'
           : defaultStyle
@@ -63,13 +63,13 @@ const Footer = (props: Props) => {
         <div className="flex items-center justify-start gap-10 ">
           <Button
             variant={'common'}
-            className=" text-lg font-semibold px-[30px] py-[17px]"
+            className="text-lg font-semibold flex items-center h-12 px-7"
           >
             {'anirban.tasfin.azad@gmail.com'}
           </Button>
           <Button
             variant={'common'}
-            className="text-[18px] font-semibold px-[30px] py-[17px]"
+            className="text-lg font-semibold flex items-center h-12 px-7"
           >{`+880 192 621 4838`}</Button>
         </div>
         {/* Bottom - Copyright & Socials */}
