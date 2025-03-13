@@ -1,5 +1,7 @@
 import Cover from "@/components/projects/Cover";
 import Figure from "@/components/projects/Figure";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
 import ProjectHeader from "@/components/projects/ProjectHeader";
 import ProjectInfo from "@/components/projects/ProjectInfo";
 import ProjectPara from "@/components/projects/ProjectPara";
@@ -83,7 +85,7 @@ const SongjogWorkPage = (props: Props) => {
           Before jumping into the research we opted to figure out who our focus groups were. 
           Figuring out various use cases, we thought of quite a few personas and scenarios.<br />
           </p>
-          <ul className="list-disc">
+          <ul className="list-disc list-inside">
             <li>
               <span className="font-medium">Professional Caregivers - </span>
               Nurses, home aides, and personal caregivers.
@@ -127,6 +129,59 @@ const SongjogWorkPage = (props: Props) => {
             After conducting several rounds of surveys, user interviews, and analyzing the data, we 
             identified the following issues preventing users from locating suitable caregivers.
           </p>
+          <div className="flex flex-col gap-4 py-3">
+            <div className="w-full flex flex-col gap-4">
+              <hr className="border-[1px] border-monochrome30" />
+              <div className="flex flex-col gap-2">
+                <p className="text-[#E27E0A] font-semibold text-lg">"How do users currently find available caregivers?"</p>
+                <p>
+                Users rely on word-of-mouth or informal networks, making it difficult to find caregivers 
+                quickly. 73% of respondents said they had to ask friends or family for recommendations.
+                </p>
+              </div>
+            </div>
+            <div className="w-full flex flex-col gap-4">
+              <hr className="border-[1px] border-monochrome30" />
+              <div className="flex flex-col gap-2">
+                <p className="text-[#E27E0A] font-semibold text-lg">"How well do users communicate their needs before booking?"</p>
+                <p>
+                Communication was limited, making it hard for users to explain needs; caregivers 
+                lacked context on recipients. Researching pre-consultation forms could help admins in this case.
+                </p>
+              </div>
+            </div>
+            <div className="w-full flex flex-col gap-4">
+              <hr className="border-[1px] border-monochrome30" />
+              <div className="flex flex-col gap-2">
+                <p className="text-[#E27E0A] font-semibold text-lg">"How do users evaluate caregivers before selecting one?</p>
+                <p>
+                Trust was a major concern, with 67% struggling to form an opinion on caregiver 
+                qualifications beyond personal referrals.
+                </p>
+              </div>
+            </div>
+            <div className="w-full flex flex-col gap-4">
+              <hr className="border-[1px] border-monochrome30" />
+              <div className="flex flex-col gap-2">
+                <p className="text-[#E27E0A] font-semibold text-lg">"How transparent is the pricing and planning process?"</p>
+                <p>
+                Users found pricing unclear, with hidden fees and broker charges adding to the confusion. 
+                They wanted more flexibility in customizing care plans.
+                </p>
+              </div>
+            </div>
+            <div className="w-full flex flex-col gap-4">
+              <hr className="border-[1px] border-monochrome30" />
+              <div className="flex flex-col gap-2">
+                <p className="text-[#E27E0A] font-semibold text-lg">"How do users keep track of past and upcoming caregiving appointments?”</p>
+                <p>
+                Most users managed bookings through phone calls or personal notes, leading to forgotten 
+                appointments. Some mentioned having difficulty retrieving past service details when needed.
+                </p>
+              </div>
+              <hr className="border-[1px] border-monochrome30" />
+            </div>
+          </div>
         </ProjectPara>
         <ProjectPara title="Define">
           <p>
@@ -164,8 +219,8 @@ const SongjogWorkPage = (props: Props) => {
           indicators, and a contrasting monochrome set for better readability. For typography, I opted for 
           Lexend, a modern and sleek font that ensures clarity and accessibility.<br />
           </p>
-          <Figure
-            url="/songjog/color-typography.png"
+          <Image
+            src="/songjog/color-typography.png"
             width={800}
             height={1308}
             alt="color-typography"
@@ -178,7 +233,175 @@ const SongjogWorkPage = (props: Props) => {
           with the use of drawn illustrations, these design choices help convey a sense of friendliness and 
           support throughout the app.<br />
           </p>
+          <Image
+            src="/songjog/design-system-2.png"
+            width={800}
+            height={1308}
+            alt="elevation-spacing"
+            title="Elevation & spacing"
+          />
+          <br />
+          <p>
+          For the layout, we decided that a four-column grid system would work best, maintaining 16 px of 
+          margin on both side. Additionally, a 10px gutter was used within the grids. While an 8px multiple 
+          is often a standard choice, it felt too congested for this design. The 10px gutter provided a 
+          better balance between spacing and content density, enhancing readability and usability. <br />
+          <br />
+          The logo design went through multiple iterations. Initially, I aimed for an abstract approach, 
+          incorporating props to signify local associations. However, after discussions with the clients, 
+          I refined the concept into something more relatable for users. <br />
+          <br />
+          The final design visually represents two figures—one symbolizing the caregiver and the other as 
+          the care receiver. Between them, three supporting hearts convey support and empathy. I’m particularly 
+          pleased that I managed to integrate all these elements within a single circular shape, creating a 
+          more cohesive and unified logo. 
+          <br />
+          </p>
+          <Image
+            src="/songjog/logo-grid.png"
+            width={800}
+            height={544}
+            alt="logo-grid"
+            title="Logo & Others"
+          />
         </ProjectPara>
+        <ProjectPara title="Design Prototype">
+          <p>
+          The core and the most focused feature of the application is Care Appointments, allowing users to 
+          book services based on their preferred time, date, or a custom schedule. Since caregiver 
+          availability isn't directly tracked by the system, an alternative approach was implemented—users 
+          can browse available caregivers and specify their preferred choice during the confirmation call.<br />
+          <br />
+          To enhance user convenience, active caregivers were highlighted with a dedicated card on both 
+          the Home and Care list screens. Additionally, a Bookings tab was designed to display the history 
+          of appointments, allowing users to review past bookings, re-book services, or leave feedback on 
+          their experience.<br />
+          </p>
+          <Figure
+            url="/songjog/prototype-1.png"
+            width={800}
+            height={372}
+            alt="care-appointments"
+            title="Care Appointments"
+          />
+          <p>
+          The Courses section was designed to be simple & straightforward. Courses were categorized by levels 
+          of expertise and included a dedicated screen displaying lessons, descriptions, and prior reviews. 
+          Live courses featured a marker indicating the number of attendees. Once any user purchases a course, 
+          they receive a notification and can access it from either the Explore Courses or Subscription screen. 
+          Additionally, the progress of ongoing courses is always visible on both screens and is tracked using 
+          the "Mark as Done" feature, allowing users to keep track of completed lessons efficiently. <br />
+          </p>
+          <Figure
+            url="/songjog/prototype-2.png"
+            width={800}
+            height={372}
+            alt="courses"
+            title="Courses"
+          />
+          <p>
+          The training sessions were only available to users who registered as caregiver trainees (marked by a 
+          trainee badge on their profile). Once registered, training courses were unlocked and tracked by the 
+          system. When a user completes a training they would be ranked by Level badges. <br />
+          <br />
+          Since most training sessions and materials were conducted live, they did not require a structured course 
+          outline. However, users could access details of what they would learn and a list of relevant documents 
+          once they purchased a training session. Similar to courses, the training progress would be displayed to 
+          users in the Subscription screen. Upon successfully completing the training with a sufficient score, 
+          trainees received a certificate, which they could access once the training was finished. <br />
+          </p>
+          <Figure
+            url="/songjog/prototype-3.png"
+            width={800}
+            height={372}
+            alt="training"
+            title="Training"
+          />
+          <h5 className=" text-monochrome110 font-semibold text-lg">
+            Other Screens
+          </h5>
+          <p>
+          Supporting the main features, several accessibility screens were designed to ensure smooth 
+          navigation and better user understanding.
+          </p>
+          <ul className="list-disc list-inside">
+            <li>
+            The <span className="font-medium">Access & Subscription screen</span> displayed all booked 
+            and purchased services, allowing users to manage their care and training sessions easily.
+            </li><li>
+            A team page showcased <span className="font-medium">all available caregivers </span> along 
+            with their profiles, helping users assess and choose the right caregiver for their loved 
+            ones. This feature reinforced <span className="font-medium">transparency and trust </span> 
+            between care receivers and caregivers.
+            </li><li>
+            A <span className="font-medium">dedicated emergency services page </span> provided quick 
+            access to essential services, emphasizing the platform’s commitment to users' well-being.
+            </li><li>
+            Additional screens, such as <span className="font-medium">notifications, support, and 
+            pricing details,</span> were included to improve user experience and provide clarity on 
+            essential aspects of the service. 
+            </li>
+          </ul>
+          <Image
+            src="/songjog/prototype-4.png"
+            width={800}
+            height={372}
+            alt="other-screens"
+            title="Other Screens"
+          />
+        </ProjectPara>
+        <ProjectPara title="Outcome">
+          <p>
+          The platform made booking care services easier, improved caregiver management, and built user 
+          trust with transparent profiles and emergency support. Users found navigation simple, and progress 
+          tracking helped trainees stay on track. The dedicated emergency page ensured quick access to 
+          urgent care. Overall, the system improved usability and service efficiency. <br />
+          </p>
+          <div className="flex flex-row justify-between w-full px-8 py-5">
+            <div className="flex flex-col justify-center items-center w-[180px]">
+              <h1 className="text-[#D8790C] text-[48px] leading-[1.5] font-medium">91%</h1>
+              <span className="text-monochrome110 w-auto text-center">met sustainability expectations</span>
+            </div>
+            <div className="flex flex-col justify-center items-center w-[180px]">
+              <h1 className="text-[#D8790C] text-[48px] leading-[1.5] font-medium">84.2%</h1>
+              <span className="text-monochrome110 w-auto text-center">received top marks in navigation</span>
+            </div>
+            <div className="flex flex-col justify-center items-center w-[180px]">
+              <h1 className="text-[#D8790C] text-[48px] leading-[1.5] font-medium">+62%</h1>
+              <span className="text-monochrome110 w-auto text-center">increased sales after launching product</span>
+            </div>
+          </div>
+          <div className=" flex flex-col gap-6 p-8 bg-[#CEE9BF]">
+            <p className=" font-medium text-monochrome90 text-[24px] leading-[1.5]">
+            Our weak points were strengthened by <span className=" text-matchaBase">Anirban's data-driven 
+            approach </span> and design expertise. The officials were highly impressed with the 
+            <span className=" text-matchaBase"> key solutions </span> provided to enhance our system. 
+            His implementations led to a <span className=" text-matchaBase"> 72% increase in user 
+            engagement,</span> bringing us closer to our goals.
+            <br />
+            </p>
+            <div className="flex items-center gap-4">
+              <Image
+                src="/songjog/founder.png"
+                width={64}
+                height={64}
+                alt="gear-icon"
+              />
+              <div className=" flex flex-col gap-2">
+                <h4 className=" text-monochrome110 font-semibold text-xl">
+                  Ahmed Javed Jamal
+                </h4>
+                <span className=" text-monochrome60 font-medium">Co-Founder, Songjog Foundation</span>
+              </div>
+            </div>
+          </div>
+        </ProjectPara>
+        <Button
+          type="submit"
+          className="w-fit px-9 py-3 h-11 rounded-none hover:bg-matcha20 self-center bg-[#CEE9BF] text-monochrome110 font-semibold tracking-[5%] text-base "
+        >
+          Watch Full Prototype
+        </Button>
       </section>
     </main>
   );

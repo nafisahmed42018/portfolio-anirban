@@ -11,7 +11,7 @@ const ProjectHeader = ({title,shortDesc}: ProjectHeaderProps) => {
         <div className="flex items-center gap-2">
             {/* Pulse Animation */}
             <div className="w-7 h-7 relative -ml-2">
-              <div className=" w-2 h-2 rounded-full bg-monochrome90 absolute top-1/2 2xl:left-1/2  left-[90%] -translate-x-1/2 -translate-y-1/2 z-10"></div>
+              <div className=" w-2 h-2 rounded-full bg-monochrome90 absolute top-1/2 2xl:left-1/2 xl:left-1/2 left-[90%] -translate-x-1/2 -translate-y-1/2 z-[1]"></div>
               <div className="w-7 h-7 rounded-full bg-matchaBad absolute top-0 left-0 animate-scaleFade"></div>
             </div>
             <p className=" font-medium text-lg leading-[21.6px]">

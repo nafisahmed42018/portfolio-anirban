@@ -8,7 +8,7 @@ const Hero = (props: Props) => {
   return (
     <section className=" w-full h-[92vh] text-monochrome90 bg-hero-pattern bg-cover bg-center relative">
       <div className=" absolute w-full bottom-0 px-[120px]">
-        <div className="container px-[120px] h-20 flex items-center justify-between">
+        <div className="container px-[120px] h-28 flex items-center justify-between">
           <p className="text-black font-normal text-base leading-[21.6px]">
             Dhaka, Bangladesh
           </p>

@@ -14,7 +14,7 @@ const works = [
       'This victory will forever stand as a testament to the power of teamwork, the strength of character, and the universal language of sport that transcends boundaries and inspires millions.',
   },
   {
-    url: '/home-recent-works-2.png',
+    url: '/work-songjog.png',
     name: 'Songjog Caregiver',
     type: 'App/SaaS',
     year: '2023',

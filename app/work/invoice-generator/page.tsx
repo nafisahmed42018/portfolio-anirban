@@ -128,7 +128,7 @@ const InvoiceGenWorkPage = (props: Props) => {
           our main competitors were Zoho, Wise, and Invoice Simple. After using these 
           invoice makers, I gathered some findings.<br />
           </p>
-          <ul className="list-disc">
+          <ul className="list-disc list-inside">
             <li>
             None of the competitors (Zoho, Wise, Invoice Simple) included a product tracking system.
             </li><li>
@@ -252,7 +252,7 @@ const InvoiceGenWorkPage = (props: Props) => {
           invoice generator, it includes the basic elements, but let’s talk about the 
           standout features that truly address and solve the key problems.<br />
           </p>
-          <ul className="list-disc">
+          <ul className="list-disc list-inside wrap">
             <li>
             <span className="font-medium">Flexible Field Titles –</span> Titles were 
             kept either abstract or editable, allowing customization while maintaining 
