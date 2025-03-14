@@ -50,9 +50,17 @@ const Footer = (props: Props) => {
                   : 'text-monochrome90'
               }`}
           >
-            <Link href={'/'}>Back to top</Link>
+            <button 
+              onClick={() => window.scrollTo(0, 0)}
+            >
+              Back to top
+            </button>
             <Link href={'/'}>Writeups</Link>
-            <Link href={'/'}>Resume</Link>
+            <button 
+              onClick={() => window.open("https://www.dropbox.com/home/Documents?preview=Resume_Anirban_Tasfin_Azad.pdf")}
+            >
+              Resume
+            </button>
           </div>
         </div>
         {/* Horizontal Line */}
@@ -63,6 +71,7 @@ const Footer = (props: Props) => {
         <div className="flex items-center justify-start gap-10 ">
           <Button
             variant={'common'}
+            onClick={() => window.open('mailto:anirban.tasfin.azad@gmail.com')}
             className={`text-lg font-semibold flex items-center h-12 px-7 ${
               defaultPages.includes(pathname)
                 ? 'text-monochrome90 border-[2px] border-monochrome90 '
@@ -73,6 +82,7 @@ const Footer = (props: Props) => {
           </Button>
           <Button
             variant={'common'}
+            onClick={() => window.open('tel:+8801926214838')}
             className={`text-lg font-semibold flex items-center h-12 px-7 ${
               defaultPages.includes(pathname)
                 ? 'text-monochrome90 border-[2px] border-monochrome90 '
@@ -105,10 +115,10 @@ const Footer = (props: Props) => {
               Socials
             </div>
             <div className="flex items-center justify-around gap-6">
-              <Link href={'/'}>Instagram</Link>
-              <Link href={'/'}>LinkedIn</Link>
-              <Link href={'/'}>Dribble</Link>
-              <Link href={'/'}>GitHub</Link>
+              <Link href={'https://www.instagram.com/qitzuphyn/'}>Instagram</Link>
+              <Link href={'https://linkedin.com/in/anirban-tasfin-azad/'}>LinkedIn</Link>
+              <Link href={'https://dribbble.com/qitzuphyn'}>Dribbble</Link>
+              <Link href={'https://github.com/Anirban-45/'}>GitHub</Link>
             </div>
           </div>
         </div>

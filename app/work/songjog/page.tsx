@@ -1,3 +1,4 @@
+'use client'
 import Cover from "@/components/projects/Cover";
 import Figure from "@/components/projects/Figure";
 import Image from "next/image";
@@ -397,8 +398,9 @@ const SongjogWorkPage = (props: Props) => {
           </div>
         </ProjectPara>
         <Button
-          type="submit"
+          variant={"default"}
           className="w-fit px-9 py-3 h-11 rounded-none hover:bg-matcha20 self-center bg-[#CEE9BF] text-monochrome110 font-semibold tracking-[5%] text-base "
+          onClick={() => window.open("https://www.figma.com/proto/LsNRh2kNE24xKXiSInkFsI/Caregiver-(Copy)?page-id=38%3A34&node-id=98-863&viewport=657%2C658%2C0.33&t=8z8qG4Bl5TbtpCJh-1&scaling=min-zoom&content-scaling=fixed")}
         >
           Watch Full Prototype
         </Button>

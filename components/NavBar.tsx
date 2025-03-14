@@ -27,6 +27,7 @@ const NavBar = (props: Props) => {
             <Button
               variant={'resume'}
               className="text-base flex items-center gap-2 p-0"
+              onClick={() => window.open("https://www.dropbox.com/home/Documents?preview=Resume_Anirban_Tasfin_Azad.pdf")}
             >
               Resume
               <LucideSquareArrowOutUpRight width={20} height={20} />
