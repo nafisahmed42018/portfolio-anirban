@@ -1,8 +1,10 @@
+'use client'
 import Cover from "@/components/projects/Cover";
 import Figure from "@/components/projects/Figure";
 import ProjectHeader from "@/components/projects/ProjectHeader";
 import ProjectInfo from "@/components/projects/ProjectInfo";
 import ProjectPara from "@/components/projects/ProjectPara";
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import React from "react";
 
@@ -58,7 +60,7 @@ const BeditorWorkPage = (props: Props) => {
             <li>A polished easy to understand UI from a markdown view.</li>
           </ul>
         </ProjectPara>
-        <div className=" flex flex-col gap-4 p-8 bg-[#cee9bf6c]">
+        <div className=" flex flex-col gap-4 p-8 bg-[#cee9bf99]">
           <div className="flex items-center gap-4">
             <Image
               src="/beditor/gear-icon.png"
@@ -275,6 +277,13 @@ const BeditorWorkPage = (props: Props) => {
             title="Modals"
           />
         </ProjectPara>
+        <Button
+          variant={"default"}
+          className="w-fit px-9 py-3 h-11 rounded-none hover:bg-matcha20 self-center bg-[#CEE9BF] text-monochrome110 font-semibold tracking-[5%] text-base "
+          onClick={() => window.open("https://www.figma.com/proto/ujylx2uBvwiWrJdlgah2Vw/BEditor?page-id=0%3A1&node-id=2-2&viewport=612%2C454%2C0.25&t=9xzCPJ1C99he4JGS-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=2%3A2")}
+        >
+          Watch Full Prototype
+        </Button>
       </section>
     </main>
   );
