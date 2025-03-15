@@ -1,19 +1,20 @@
-import React from 'react'
-import { Button } from '../ui/button'
-import { LucideMail } from 'lucide-react'
-import HighFive from './HighFive'
+import React from "react";
+import { Button } from "../ui/button";
+import { LucideMail } from "lucide-react";
+import HighFive from "./HighFive";
 
-type Props = {}
+type Props = {};
 
 const Contact = (props: Props) => {
   return (
-    <section className="w-full bg-matchaBad text-monochrome00 rounded-tr-[60px] rounded-tl-[60px]">
+    <section className="w-full bg-matchaBad text-monochrome00 rounded-tr-[60px] rounded-tl-[60px] relative">
+      <div className=" absolute bg-monochrome110 w-full h-full -z-10"></div>
       <div className="container px-[120px] py-[124px] flex flex-col items-center justify-center gap-[52px]">
         {/* Graphic */}
         <div className="h-[180px] w-[180px] rounded-full bg-monochrome00 relative">
           <HighFive
             styleProps={
-              'absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'
+              "absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
             }
           />
         </div>
@@ -35,7 +36,7 @@ const Contact = (props: Props) => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

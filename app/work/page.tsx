@@ -6,7 +6,7 @@ type Props = {}
 
 const WorkPage = (props: Props) => {
   return (
-    <main className="pt-[80px] flex flex-col items-center justify-center font-[family-name:var(--font-plus-jakarta-sans)]">
+    <main className="pt-[80px] flex flex-col items-center justify-center ">
       <WorkHeader />
       <WorkContainer />
     </main>

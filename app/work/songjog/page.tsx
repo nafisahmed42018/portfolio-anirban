@@ -21,7 +21,7 @@ const pageData = {
 };
 const SongjogWorkPage = (props: Props) => {
   return (
-    <main className="pt-[80px] flex flex-col items-center justify-center font-[family-name:var(--font-plus-jakarta-sans)]">
+    <main className="pt-[80px] flex flex-col items-center justify-center ">
       <Cover url="/songjog/cover.png" alt="songjog-cover" />
       <section className="container px-[320px] pt-[80px] pb-[84px] flex flex-col gap-12">
         <ProjectHeader title={pageData.title} shortDesc={pageData.shortDesc} />

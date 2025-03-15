@@ -1,9 +1,9 @@
-import React from 'react'
-import ExperienceJob from './ExperienceJob'
-import ExperienceEducation from './ExperienceEducation'
-import ExperienceSkill from './ExperienceSkill'
+import React from "react";
+import ExperienceJob from "./ExperienceJob";
+import ExperienceEducation from "./ExperienceEducation";
+import ExperienceSkill from "./ExperienceSkill";
 
-type Props = {}
+type Props = {};
 
 const Experience = (props: Props) => {
   return (
@@ -14,8 +14,8 @@ const Experience = (props: Props) => {
           {/* Experience Heading */}
           <div className=" flex flex-col gap-3">
             <div className=" flex items-center justify-start gap-2">
-              <div className="w-7 h-7 relative">
-                <div className=" w-2 h-2 rounded-full bg-monochrome90 absolute top-1/2 2xl:left-1/2 xl:left-1/2 left-[90%] -translate-x-1/2 -translate-y-1/2 z-[1]"></div>
+              <div className="max-w-7 w-full h-7 relative">
+                <div className=" w-2 h-2 rounded-full bg-monochrome90 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[1]"></div>
                 <div className="w-7 h-7 rounded-full bg-matchaBad absolute top-0 left-0 animate-scaleFade"></div>
               </div>
               <h4 className=" font-medium text-lg leading-[24.3px] text-[#383838]">
@@ -36,7 +36,7 @@ const Experience = (props: Props) => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Experience
+export default Experience;

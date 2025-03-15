@@ -11,10 +11,8 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <>
-      <Head>
-        <link rel="icon" href="/Icon-small.png" />
-      </Head>
-      <main className="pt-[80px] font-[family-name:var(--font-plus-jakarta-sans)]">
+
+      <main className="pt-[80px] ">
         {/* Hero */}
         <Hero />
         {/* Body */}

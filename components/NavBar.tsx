@@ -12,7 +12,7 @@ const NavBar = (props: Props) => {
   const router = useRouter()
   return (
     <header
-      className={`flex py-4 fixed top-0 w-full z-10 bg-background/95 font-[family-name:var(--font-plus-jakarta-sans)]`}
+      className={`flex py-4 fixed top-0 w-full z-50 bg-background/95 `}
     >
       <nav className="container flex items-center justify-between gap-10 px-[120px] mx-auto">
         <div>

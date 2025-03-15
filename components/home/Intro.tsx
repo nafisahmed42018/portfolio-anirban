@@ -1,20 +1,20 @@
-import Image from 'next/image'
-import React from 'react'
+import Image from "next/image";
+import React from "react";
 
-type Props = {}
+type Props = {};
 
 const data = [
   {
-    url: '/softeko.png',
-    name: 'Softeko.co',
-    designation: 'Senior UX/UI Designer',
+    url: "/softeko.png",
+    name: "Softeko.co",
+    designation: "Senior UX/UI Designer",
   },
   {
-    url: '/IUT.png',
-    name: 'IUT',
-    designation: 'BSc. in Software Engineering',
+    url: "/IUT.png",
+    name: "IUT",
+    designation: "BSc. in Software Engineering",
   },
-]
+];
 const Intro = (props: Props) => {
   return (
     <section className="container px-[120px]">
@@ -28,11 +28,11 @@ const Intro = (props: Props) => {
           </div>
           {/* Intro */}
           <p className=" font-normal text-xl ">
-            I also work as a{' '}
+            I also work as a{" "}
             <span className=" font-medium text-matchaBase">
               Front-end developer
-            </span>{' '}
-            and a{' '}
+            </span>{" "}
+            and a{" "}
             <span className="font-medium text-[#8D7347]">
               Creative content writer
             </span>
@@ -55,8 +55,8 @@ const Intro = (props: Props) => {
         <div className="flex flex-col gap-6 max-w-[340px] text-monochrome90">
           <div className="flex items-center gap-3">
             {/* Pulse Animation */}
-            <div className="w-7 h-7 relative">
-              <div className=" w-2 h-2 rounded-full bg-monochrome90 absolute top-1/2 2xl:left-1/2 xl:left-1/2 left-[90%] -translate-x-1/2 -translate-y-1/2 z-[1]"></div>
+            <div className="max-w-7 w-full h-7 relative">
+              <div className=" w-2 h-2 rounded-full bg-monochrome90 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[1]"></div>
               <div className="w-7 h-7 rounded-full bg-matchaBad absolute top-0 left-0 animate-scaleFade"></div>
             </div>
             <p className=" font-medium text-base leading-[21.6px]">
@@ -79,7 +79,7 @@ const Intro = (props: Props) => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Intro
+export default Intro;
