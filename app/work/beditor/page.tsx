@@ -279,7 +279,7 @@ const BeditorWorkPage = (props: Props) => {
         </ProjectPara>
         <Button
           variant={"default"}
-          className="w-fit px-9 py-3 h-11 rounded-none hover:bg-matcha20 self-center bg-[#CEE9BF] text-monochrome110 font-semibold tracking-[5%] text-base "
+          className="w-fit px-9 py-3 h-11 rounded-none hover:bg-matcha20 self-center bg-[#CEE9BF] text-monochrome110 font-semibold tracking-[5%] text-base font-plusJakartaSans"
           onClick={() =>
             window.open(
               "https://www.figma.com/proto/ujylx2uBvwiWrJdlgah2Vw/BEditor?page-id=0%3A1&node-id=2-2&viewport=612%2C454%2C0.25&t=9xzCPJ1C99he4JGS-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=2%3A2"

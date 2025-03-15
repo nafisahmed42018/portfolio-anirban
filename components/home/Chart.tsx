@@ -47,29 +47,34 @@ export function Chart() {
   return (
     <div className="w-full h-[330px] rounded-lg relative flex flex-col">
       {/* Y-axis labels (Positioned left inside container) */}
-      <div className="absolute left-0 top-[35%] text-gray-600 text-sm rotate-0">
+      <div className="absolute left-0 top-[35%] text-monochrome110 font-plusJakartaSans text-lg rotate-0">
         Done enough <br /> to work
       </div>
-      <div className="absolute left-0 bottom-[15%] text-gray-600 text-sm rotate-0">
+      <div className="absolute left-0 bottom-[12%] text-monochrome110 font-plusJakartaSans text-lg rotate-0">
         Know enough <br /> to hang
       </div>
 
       <ResponsiveContainer className={"self-end"} width="90%" height="100%">
         <AreaChart
           data={chartData}
-          margin={{ top: 40, right: 20, left: 20, bottom: 40 }}
+          margin={{ top: 40, right: 20, left: 44, bottom: 40 }}
         >
           {/* X-axis Labels Positioned on Top */}
           <XAxis
             dataKey="category"
             axisLine={false}
             tickLine={false}
+            padding={{ left: 20, right: 20 }}
             tick={{
               fontSize: 16,
-              fill: "#5A5A5A",
               width: 10,
+              fill: "#383838",
               textAnchor: "right",
+              fontFamily: "Plus Jakarta Sans",
             }}
+            // tickFormatter={(value) => 
+            //   value === "UI Design" || value === "UX Design" ? "#E9A545" : "#383838"
+            // }
             interval={0}
             height={50}
             orientation="top"
@@ -77,7 +82,7 @@ export function Chart() {
 
           {/* Hidden Y-axis to avoid overflow issues */}
           <YAxis hide domain={[0, 1]} />
-          <ReferenceLine y={0.75} stroke="#C4C4C4" strokeWidth={1} />
+          <ReferenceLine y={0.70} stroke="#C4C4C4" strokeWidth={1} />
           <ReferenceLine y={0.1} stroke="#C4C4C4" strokeWidth={1} />
 
           {/* Bell Curve Area with Gradient */}
@@ -86,7 +91,8 @@ export function Chart() {
             dataKey="level"
             stroke="#E9A545"
             fill="url(#colorGradient)"
-            strokeWidth={2}
+            strokeWidth={3}
+            strokeLinecap="round"
           />
 
           {/* Gradient for smooth area transition */}

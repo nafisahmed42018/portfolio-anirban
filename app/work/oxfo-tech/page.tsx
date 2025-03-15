@@ -322,7 +322,7 @@ const OxfoTechWorkPage = (props: Props) => {
         /> */}
         <Button
           variant={'default'}
-          className="w-fit px-9 py-3 h-11 rounded-none hover:bg-matcha20 self-center bg-[#CEE9BF] text-monochrome110 font-semibold tracking-[5%] text-base"
+          className="w-fit px-9 py-3 h-11 rounded-none hover:bg-matcha20 self-center bg-[#CEE9BF] text-monochrome110 font-semibold tracking-[5%] text-base font-plusJakartaSans"
           onClick={() => window.open("https://www.figma.com/proto/JW2f2hFNQDMIpNUdzljdkB/Devshop?page-id=18%3A2&node-id=51-7&viewport=152%2C435%2C0.24&t=zto41bapEfwc0dN2-1&scaling=min-zoom&content-scaling=fixed")}
         >
           Watch Full Prototype

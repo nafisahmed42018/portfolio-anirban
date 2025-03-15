@@ -51,20 +51,20 @@ const Service = (props: Props) => {
                 {service.title}
               </h4>
             </div>
-            <p className=" font-normal text-[28px] leading-[35.3px] text-monochrome90">
+            <p className=" font-normal text-[28px] leading-[35.3px] text-monochrome90 h-[140px]">
               {service.desc}
             </p>
             <div className="flex items-center gap-3 text-monochrome90 group">
               <Button
                 variant={'link'}
-                className=" font-medium text-xl leading-[26.2px] p-0 "
+                className=" font-medium text-xl leading-[26px] p-0 text-monochrome110"
               >
                 {service.buttonText}
               </Button>
               <LucideArrowRight
                 width={20}
                 height={20}
-                className=" mt-1 group-hover:translate-x-1 group-hover:animate duration-500"
+                className=" mt-1 group-hover:translate-x-1 group-hover:animate duration-500 text-monochrome110"
               />
             </div>
           </div>

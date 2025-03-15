@@ -34,10 +34,10 @@ const Footer = (props: Props) => {
                   alt="Anirban"
                 />
               </div>
-              <p className="">Thank You</p>
+              <h2 className="">Thank You</h2>
             </div>
             <div>
-              <p
+              <h2
                 className={` ${
                   defaultPages.includes(pathname)
                     ? "text-matchaBase"
@@ -45,11 +45,11 @@ const Footer = (props: Props) => {
                 }`}
               >
                 for stopping by
-              </p>
+              </h2>
             </div>
           </div>
           <div
-            className={`flex flex-col items-end font-medium text-xl  gap-6 
+            className={`flex flex-col items-end font-medium text-xl font-plusJakartaSans gap-6 
                 defaultPages.includes(pathname)
                   ? 'text-monochrome00'
                   : 'text-monochrome90'
@@ -76,8 +76,8 @@ const Footer = (props: Props) => {
         <div className="flex items-center justify-start gap-10 ">
           <Button
             variant={"common"}
-            onClick={() => window.open("mailto:anirban.tasfin.azad@gmail.com")}
-            className={`text-lg font-semibold flex items-center h-12 px-7 ${
+            onClick={() => navigator.clipboard.writeText("anirban.tasfin.azad@gmail.com")}
+            className={`text-lg font-semibold flex items-center font-plusJakartaSans h-12 px-7 ${
               defaultPages.includes(pathname)
                 ? "text-monochrome90 border-[2px] border-monochrome90 "
                 : "text-monochrome00 bg-monochrome110 border-[1.5px] border-monochrome00 "
@@ -88,7 +88,7 @@ const Footer = (props: Props) => {
           <Button
             variant={"common"}
             onClick={() => window.open("tel:+8801926214838")}
-            className={`text-lg font-semibold flex items-center h-12 px-7 ${
+            className={`text-lg font-semibold flex items-center font-plusJakartaSans h-12 px-7 ${
               defaultPages.includes(pathname)
                 ? "text-monochrome90 border-[2px] border-monochrome90 "
                 : "text-monochrome00 bg-monochrome110 border-[1.5px] border-monochrome00 "
@@ -99,7 +99,7 @@ const Footer = (props: Props) => {
         <div className="flex items-center justify-between mt-5 font-semibold">
           <div className="flex flex-col items-start justify-start gap-4">
             <div
-              className={`text-xl  ${
+              className={`text-xl font-plusJakartaSans ${
                 defaultPages.includes(pathname)
                   ? "text-matchaBase"
                   : "text-matcha20"
@@ -107,11 +107,11 @@ const Footer = (props: Props) => {
             >
               Version
             </div>
-            <div>&copy; {new Date().getFullYear()} Anirban Tasfin Azad</div>
+            <div className="font-plusJakartaSans">&copy; {new Date().getFullYear()} Anirban Tasfin Azad</div>
           </div>
           <div className="flex flex-col items-start justify-start gap-4 ">
             <div
-              className={`text-xl ${
+              className={`text-xl font-plusJakartaSans ${
                 defaultPages.includes(pathname)
                   ? "text-matchaBase"
                   : "text-matcha20"
@@ -119,7 +119,7 @@ const Footer = (props: Props) => {
             >
               Socials
             </div>
-            <div className="flex items-center justify-around gap-6">
+            <div className="flex items-center justify-around gap-6 font-plusJakartaSans">
               <Link href={"https://www.instagram.com/qitzuphyn/"}>
                 Instagram
               </Link>

@@ -44,8 +44,8 @@ const WorkCard = ({
           </h4>
         </div>
         {/* Work Head */}
-        <div className=" text-[44px] leading-[59.4px] font-semibold text-matcha20 uppercase">
-          <h3>{workHead}</h3>
+        <div className=" text-[44px] leading-[59.4px] font-medium text-matcha20 uppercase ">
+          <span>{workHead}</span>
         </div>
         {/* Client Name */}
         <div className=" flex items-center justify-center gap-6">
@@ -89,7 +89,7 @@ const WorkCard = ({
           </div>
           <Button
             variant={'common'}
-            className="h-full rounded-[100px] px-8 py-[14px] font-semibold text-base leading-[20.16px]"
+            className="h-full rounded-[100px] px-8 py-[14px] font-semibold text-base leading-[20.16px] font-plusJakartaSans"
             onClick={()=>handleNavigation(href)}
           >
             View Case Study

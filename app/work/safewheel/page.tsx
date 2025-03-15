@@ -72,7 +72,7 @@ const SafewheelWorkPage = (props: Props) => {
               href="https://docs.google.com/document/d/1qstHXFH-4c-nd5j9ePVxUaFJsSbUtf-5cWOUD1V8PfQ/edit?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              className=" border-b border-b-[#D8790C] text-[#D8790C] font-semibold"
+              className=" border-b border-b-[#D8790C] text-[#D8790C] font-medium"
             >
               Safewheel SRS
             </a>
@@ -413,7 +413,7 @@ const SafewheelWorkPage = (props: Props) => {
               href="https://docs.google.com/document/d/1qstHXFH-4c-nd5j9ePVxUaFJsSbUtf-5cWOUD1V8PfQ/edit?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              className=" border-b border-b-[#D8790C] text-[#D8790C] font-semibold"
+              className=" border-b border-b-[#D8790C] text-[#D8790C] font-medium"
             >
               Safecash Model
             </a>
@@ -458,7 +458,7 @@ const SafewheelWorkPage = (props: Props) => {
             <li>
               <span className=" font-semibold text-[#D8790C]">
                 The best designs comes from collaboration.
-              </span>
+              </span>{" "}
               It was inspiring to witness how each person brought a unique
               perspective to the table during the sketching sessions. I observed
               that non-technical individuals unleash limitless ideas due to

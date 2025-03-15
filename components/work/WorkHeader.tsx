@@ -19,7 +19,7 @@ const WorkHeader = (props: Props) => {
           My <span className=" text-matcha60">Work</span> Projects
         </h2>
         <div className="flex flex-col gap-8">
-          <p className=" font-medium text-2xl leading-[32.4px]">
+          <p className=" font-medium text-2xl leading-[32.4px] text-[#6C6258]">
             These are a few projects I have worked on. If you look into them you
             gradually see my growth. Beginner or intermediate, I am quite proud
             of each and every one of them.
