@@ -10,7 +10,7 @@ const workData = [
       "A Website and Dashboard For maintaining your invoices and inventories",
     clientName: "SOFTEKO",
     workDesc:
-      "invoicegenerator is an EMD website for Multiple purpose of invoices with a dashboard for management and shelving.",
+      "invoicegenerator is an EMD website catering for multiple purpose of invoices including a dashboard for management, shelving & analysis.",
     projectType: "Website/SAAS",
     workImageURL: "/work-invoicegen.png",
     href: "/invoice-generator",

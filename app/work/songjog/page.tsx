@@ -134,7 +134,7 @@ const SongjogWorkPage = (props: Props) => {
             <div className="w-full flex flex-col gap-4">
               <hr className="border-[1px] border-monochrome30" />
               <div className="flex flex-col gap-2">
-                <p className="text-[#E27E0A] font-semibold text-lg">"How do users currently find available caregivers?"</p>
+                <p className="text-[#E27E0A] font-medium text-lg">"How do users currently find available caregivers?"</p>
                 <p>
                 Users rely on word-of-mouth or informal networks, making it difficult to find caregivers 
                 quickly. 73% of respondents said they had to ask friends or family for recommendations.
@@ -144,7 +144,7 @@ const SongjogWorkPage = (props: Props) => {
             <div className="w-full flex flex-col gap-4">
               <hr className="border-[1px] border-monochrome30" />
               <div className="flex flex-col gap-2">
-                <p className="text-[#E27E0A] font-semibold text-lg">"How well do users communicate their needs before booking?"</p>
+                <p className="text-[#E27E0A] font-medium text-lg">"How well do users communicate their needs before booking?"</p>
                 <p>
                 Communication was limited, making it hard for users to explain needs; caregivers 
                 lacked context on recipients. Researching pre-consultation forms could help admins in this case.
@@ -154,7 +154,7 @@ const SongjogWorkPage = (props: Props) => {
             <div className="w-full flex flex-col gap-4">
               <hr className="border-[1px] border-monochrome30" />
               <div className="flex flex-col gap-2">
-                <p className="text-[#E27E0A] font-semibold text-lg">"How do users evaluate caregivers before selecting one?</p>
+                <p className="text-[#E27E0A] font-medium text-lg">"How do users evaluate caregivers before selecting one?</p>
                 <p>
                 Trust was a major concern, with 67% struggling to form an opinion on caregiver 
                 qualifications beyond personal referrals.
@@ -164,7 +164,7 @@ const SongjogWorkPage = (props: Props) => {
             <div className="w-full flex flex-col gap-4">
               <hr className="border-[1px] border-monochrome30" />
               <div className="flex flex-col gap-2">
-                <p className="text-[#E27E0A] font-semibold text-lg">"How transparent is the pricing and planning process?"</p>
+                <p className="text-[#E27E0A] font-medium text-lg">"How transparent is the pricing and planning process?"</p>
                 <p>
                 Users found pricing unclear, with hidden fees and broker charges adding to the confusion. 
                 They wanted more flexibility in customizing care plans.
@@ -174,7 +174,7 @@ const SongjogWorkPage = (props: Props) => {
             <div className="w-full flex flex-col gap-4">
               <hr className="border-[1px] border-monochrome30" />
               <div className="flex flex-col gap-2">
-                <p className="text-[#E27E0A] font-semibold text-lg">"How do users keep track of past and upcoming caregiving appointments?”</p>
+                <p className="text-[#E27E0A] font-medium text-lg">"How do users keep track of past and upcoming caregiving appointments?”</p>
                 <p>
                 Most users managed bookings through phone calls or personal notes, leading to forgotten 
                 appointments. Some mentioned having difficulty retrieving past service details when needed.
@@ -361,15 +361,15 @@ const SongjogWorkPage = (props: Props) => {
           <div className="flex flex-row justify-between w-full px-8 py-5">
             <div className="flex flex-col justify-center items-center w-[180px]">
               <h1 className="text-[#D8790C] text-[48px] leading-[1.5] font-medium">91%</h1>
-              <span className="text-monochrome110 w-auto text-center">met sustainability expectations</span>
+              <span className="text-monochrome110 w-auto text-center font-plusJakartaSans font-medium">met sustainability expectations</span>
             </div>
             <div className="flex flex-col justify-center items-center w-[180px]">
               <h1 className="text-[#D8790C] text-[48px] leading-[1.5] font-medium">84.2%</h1>
-              <span className="text-monochrome110 w-auto text-center">received top marks in navigation</span>
+              <span className="text-monochrome110 w-auto text-center font-plusJakartaSans font-medium">received top marks in navigation</span>
             </div>
             <div className="flex flex-col justify-center items-center w-[180px]">
               <h1 className="text-[#D8790C] text-[48px] leading-[1.5] font-medium">+62%</h1>
-              <span className="text-monochrome110 w-auto text-center">increased sales after launching product</span>
+              <span className="text-monochrome110 w-auto text-center font-plusJakartaSans font-medium">increased sales after launching product</span>
             </div>
           </div>
           <div className=" flex flex-col gap-6 p-8 bg-[#CEE9BF]">
@@ -399,7 +399,7 @@ const SongjogWorkPage = (props: Props) => {
         </ProjectPara>
         <Button
           variant={"default"}
-          className="w-fit px-9 py-3 h-11 rounded-none hover:bg-matcha20 self-center bg-[#CEE9BF] text-monochrome110 font-semibold tracking-[5%] text-base "
+          className="w-fit px-9 py-3 h-11 rounded-none hover:bg-matcha20 self-center bg-[#CEE9BF] text-monochrome110 font-semibold tracking-[5%] text-base font-plusJakartaSans"
           onClick={() => window.open("https://www.figma.com/proto/LsNRh2kNE24xKXiSInkFsI/Caregiver-(Copy)?page-id=38%3A34&node-id=98-863&viewport=657%2C658%2C0.33&t=8z8qG4Bl5TbtpCJh-1&scaling=min-zoom&content-scaling=fixed")}
         >
           Watch Full Prototype

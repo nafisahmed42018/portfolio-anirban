@@ -33,9 +33,9 @@ const ExperienceEducation = (props: Props) => {
           <h4 className="font-semibold text-[22px] leading-[27.72px]">
             {education.school}
           </h4>
-          <p className="font-semibold text-[16px] leading-[20.16px] italic text-matchaBase">
+          <h5 className="font-semibold text-[16px] leading-[20.16px] italic text-matchaBase">
             {education.degree}
-          </p>
+          </h5>
         </div>
       ))}
     </div>
