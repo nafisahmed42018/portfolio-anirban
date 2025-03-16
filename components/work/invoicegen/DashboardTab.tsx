@@ -1,0 +1,97 @@
+import React from "react";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import Figure from "@/components/projects/Figure";
+
+type Props = {};
+
+const dashboardData = [
+  {
+    value: "invoices",
+    name: "Invoices",
+    url: "/invoicegen/dashboard/invoices.png",
+    title: "",
+  },
+  {
+    value: "products",
+    name: "Products",
+    url: "/invoicegen/dashboard/products.png",
+    title: "",
+  },
+  {
+    value: "customers",
+    name: "Customers",
+    url: "/invoicegen/dashboard/customers.png",
+    title: "",
+  },
+  {
+    value: "payment-method",
+    name: "Payment",
+    url: "/invoicegen/dashboard/payment.png",
+    title: "",
+  },
+  {
+    value: "transactions",
+    name: "Transactions",
+    url: "/invoicegen/dashboard/transactions.png",
+    title: "",
+  },
+  {
+    value: "sales",
+    name: "Sales",
+    url: "/invoicegen/dashboard/sales.png",
+    title: "",
+  },
+  {
+    value: "inventory",
+    name: "Inventory",
+    url: "/invoicegen/dashboard/inventory.png",
+    title: "",
+  },
+  {
+    value: "profile",
+    name: "Profile",
+    url: "/invoicegen/dashboard/profile.png",
+    title: "",
+  },
+];
+
+const DashboardTab = (props: Props) => {
+  return (
+    <Tabs defaultValue="invoices" className="w-full transition-all">
+      <TabsList className="flex flex-wrap w-full p-1 items-center justify-around  h-full border-[1.5px] border-matchaBase rounded-full bg-transparent">
+        {dashboardData.map((data) => (
+          <TabsTrigger
+            className="px-2.5 py-1 data-[state=active]:bg-matchaBase data-[state=active]:text-white data-[state=active]:rounded-full text-[18px] text-monochrome90 leading-[100%]"
+            value={data.value}
+          >
+            {data.name}
+          </TabsTrigger>
+        ))}
+      </TabsList>
+      {dashboardData.map((data) => (
+        <TabsContent value={data.value}>
+          <Figure
+            url={data.url}
+            width={800}
+            height={413}
+            alt="dashboard-pages"
+            title={`Dashboard Page - ${data.name}`}
+          />
+        </TabsContent>
+      ))}
+    </Tabs>
+  );
+};
+
+export default DashboardTab;

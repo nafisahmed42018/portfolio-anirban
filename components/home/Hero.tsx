@@ -1,12 +1,16 @@
-import { LucideMouse } from 'lucide-react'
-import Image from 'next/image'
-import React from 'react'
+import { LucideMouse } from "lucide-react";
+import Image from "next/image";
+import React from "react";
+import HeroSVG from "./HeroSVG";
 
-type Props = {}
+type Props = {};
 
 const Hero = (props: Props) => {
   return (
     <section className=" w-full h-[92vh] text-monochrome90 bg-hero-pattern bg-cover bg-center relative">
+      <div className=" absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-0">
+        <HeroSVG />
+      </div>
       <div className=" absolute w-full bottom-0 px-[120px]">
         <div className="container px-[120px] h-28 flex items-center justify-between">
           <p className="text-black font-normal text-base leading-[21.6px]">
@@ -27,7 +31,7 @@ const Hero = (props: Props) => {
               height={160}
               alt="hero-avatar"
               className="py-[31.5px]"
-            />{' '}
+            />{" "}
             <Image
               src="/hero-quadrant.png"
               width={76.5}
@@ -40,7 +44,7 @@ const Hero = (props: Props) => {
             <span className=" font-semibold text-[72px] leading-[90.72px] pb-3">
               Hello, I am Anirban. <br />
             </span>
-            And I work as a <span className="text-[#7C9C6A]">UI/UX</span> and{' '}
+            And I work as a <span className="text-[#7C9C6A]">UI/UX</span> and{" "}
             <br />
             <span className="text-[#9A7E6F]">Product Designer</span>.
             <Image
@@ -68,7 +72,7 @@ const Hero = (props: Props) => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

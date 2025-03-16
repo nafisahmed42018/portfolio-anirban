@@ -12,9 +12,8 @@ const design = [
     desc: "Figma, Whimsical, Miro, Maze, Zeplin, Protopie, Jitter, Lucid Chart.",
   },
   {
-    type: 'Techniques',
-    desc:
-      'User stories, Competitive research, Ethnographic research, User flows, Wireframing, Prototyping, Journey maps, Design systems, Gamification.',
+    type: "Techniques",
+    desc: "User stories, Competitive research, Ethnographic research, User flows, Wireframing, Prototyping, Journey maps, Design systems, Gamification.",
   },
 ];
 
@@ -41,7 +40,10 @@ const ExperienceSkill = (props: Props) => {
         <h4 className=" font-semibold text-[24px] leading-[30.24px]">Design</h4>
         <div className=" flex flex-col items-start justify-center gap-2 font-plusJakartaSans">
           {design.map((data) => (
-            <p className=" text-[#656565] font-semibold text-[16px] leading-[21.6px] max-w-[680px]">
+            <p
+              key={data.type}
+              className=" text-[#656565] font-semibold text-[16px] leading-[21.6px] max-w-[680px]"
+            >
               <span className=" text-matchaBase font-semibold text-[16px] leading-[21.6px]">
                 {data.type}
               </span>{" "}
@@ -54,7 +56,10 @@ const ExperienceSkill = (props: Props) => {
         <h4 className=" font-semibold text-[24px] leading-[30.24px]">Tech</h4>
         <div className=" flex flex-col items-start justify-center gap-2 font-plusJakartaSans">
           {tech.map((data) => (
-            <p className=" text-[#656565] font-semibold text-[16px] leading-[21.6px] max-w-[680px]">
+            <p
+              key={data.type}
+              className=" text-[#656565] font-semibold text-[16px] leading-[21.6px] max-w-[680px]"
+            >
               <span className=" text-matchaBase font-semibold text-[16px] leading-[21.6px]">
                 {data.type}
               </span>{" "}

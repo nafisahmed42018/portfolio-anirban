@@ -15,6 +15,7 @@ export default {
       },
       backgroundImage: {
         "hero-pattern": "url('/heroBackground.png')",
+        "hero-line": "url('/home/hero-line.svg')",
       },
       screens: {
         sc1366: "1366px",

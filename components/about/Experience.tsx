@@ -10,7 +10,7 @@ const Experience = (props: Props) => {
     <section className="w-full">
       <div className="container px-[120px] pt-[80px] pb-[108px] flex flex-col items-start justify-center gap-[84px]">
         {/* Experience */}
-        <div className=" flex flex-col items-start justify-center gap-12">
+        <div className="w-full flex flex-col items-start justify-center gap-12">
           {/* Experience Heading */}
           <div className=" flex flex-col gap-3">
             <div className=" flex items-center justify-start gap-2">
