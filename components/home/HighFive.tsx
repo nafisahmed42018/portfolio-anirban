@@ -1,7 +1,7 @@
 import React from 'react'
 
 type StyleProps = {
-  styleProps: String
+  styleProps: string
 }
 
 const HighFive = ({ styleProps }: StyleProps) => {

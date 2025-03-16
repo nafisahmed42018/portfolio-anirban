@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-type Props = {};
+
 
 const data = [
   {
@@ -15,7 +15,7 @@ const data = [
     designation: "BSc. in Software Engineering",
   },
 ];
-const Intro = (props: Props) => {
+const Intro = () => {
   return (
     <section className="container px-[120px]">
       <div className="pt-12 flex items-start gap-[100px]">

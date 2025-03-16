@@ -8,7 +8,7 @@ import { useRouter } from "next/navigation";
 import NavLink from "./NavLink";
 
 const NavBar = () => {
-  const [isSidebarActive, setIsSidebarActive] = useState(false);
+  const [isSidebarActive] = useState(false);
   const router = useRouter();
   useEffect(() => {
     if (!isSidebarActive) {

@@ -1,8 +1,8 @@
-import React from 'react'
+import React from "react";
 
 type StyleProps = {
-  styleProps: String
-}
+  styleProps: string;
+};
 
 const TestimonialQuote = ({ styleProps }: StyleProps) => {
   return (
@@ -75,7 +75,7 @@ const TestimonialQuote = ({ styleProps }: StyleProps) => {
         </filter>
       </defs>
     </svg>
-  )
-}
+  );
+};
 
-export default TestimonialQuote
+export default TestimonialQuote;

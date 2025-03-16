@@ -9,7 +9,7 @@ interface ProjectParaProps {
 const ProjectPara: React.FC<ProjectParaProps> = ({
   title,
   children,
-  className,
+ 
 }) => {
   return (
     <div className="flex flex-col gap-4 items-start justify-center text-lg leading-[1.5] text-[#474747]">

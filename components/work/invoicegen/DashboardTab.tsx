@@ -3,8 +3,6 @@ import React from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Figure from "@/components/projects/Figure";
 
-
-
 const dashboardData = [
   {
     value: "invoices",
@@ -62,6 +60,7 @@ const DashboardTab = () => {
       <TabsList className="flex flex-wrap w-full p-1 items-center justify-around  h-full border-[1.5px] border-matchaBase rounded-full bg-transparent">
         {dashboardData.map((data) => (
           <TabsTrigger
+            key={data.value}
             className="px-2.5 py-1 data-[state=active]:bg-matchaBase data-[state=active]:text-white data-[state=active]:rounded-full text-[18px] text-monochrome90 leading-[100%]"
             value={data.value}
           >
@@ -70,7 +69,7 @@ const DashboardTab = () => {
         ))}
       </TabsList>
       {dashboardData.map((data) => (
-        <TabsContent value={data.value}>
+        <TabsContent key={data.value} value={data.value}>
           <Figure
             url={data.url}
             width={800}
