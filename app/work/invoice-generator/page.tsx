@@ -9,7 +9,7 @@ import React from "react";
 type Props = {};
 const pageData = {
   title: "Invoicegenerator.biz",
-  shortDesc: "A Text editor for casual writing exercise.",
+  shortDesc: "A website and dashboard for maintaining your invoices and inventories.",
   overview:
     "An invoice generator simplifies creating and managing invoices, making the process fast and user-friendly. And at times with all the products and features, it can be very complicated. This case study highlights our research and design approach, focusing on ease of use and efficiency to meet user needs effectively.",
   role: "Sr. UI/UX designer",
@@ -91,7 +91,7 @@ const InvoiceGenWorkPage = (props: Props) => {
               href="https://docs.google.com/spreadsheets/u/0/d/15Ji6sK1GESlHy4mnnVsd0QjdGCQWOA-Rs-SxwjTAuGI/htmlview#"
               target="_blank"
               rel="noopener noreferrer"
-              className=" border-b border-b-[#D8790C] text-[#D8790C] font-semibold"
+              className=" border-b border-b-[#D8790C] text-[#D8790C] font-medium"
             >
               Invoicegenerator research
             </a>
@@ -108,7 +108,7 @@ const InvoiceGenWorkPage = (props: Props) => {
               href="https://docs.google.com/document/d/1yGzaTWkCrTA7UI67ajJTIBSF6KYQh8pOo4PQmPjyPu8/edit?tab=t.0#heading=h.4sh2g3a76u2n"
               target="_blank"
               rel="noopener noreferrer"
-              className=" border-b border-b-[#D8790C] text-[#D8790C] font-semibold"
+              className=" border-b border-b-[#D8790C] text-[#D8790C] font-medium"
             >
               Invoicegenerator PRD
             </a>
@@ -234,7 +234,7 @@ const InvoiceGenWorkPage = (props: Props) => {
             href="https://docs.google.com/document/d/1Hi6srEGOgmyd6UVXAbBvzKtKeNKYbj3BdALB_hBmbq0/edit?tab=t.0#heading=h.bx6rff5tzq47"
             target="_blank"
             rel="noopener noreferrer"
-            className=" border-b border-b-[#D8790C] text-[#D8790C] font-semibold"
+            className=" border-b border-b-[#D8790C] text-[#D8790C] font-medium"
           >
             UI Wireframe LLD
           </a>
@@ -357,7 +357,7 @@ const InvoiceGenWorkPage = (props: Props) => {
         </ProjectPara>
         <Button
           type="submit"
-          className="w-fit px-9 py-3 h-11 rounded-none hover:bg-matcha20 self-center bg-[#CEE9BF] text-monochrome110 font-semibold tracking-[5%] text-base "
+          className="w-fit px-9 py-3 h-11 rounded-none hover:bg-matcha20 self-center bg-[#CEE9BF] text-monochrome110 font-semibold tracking-[5%] text-base font-plusJakartaSans"
         >
           View Complete Design
         </Button>

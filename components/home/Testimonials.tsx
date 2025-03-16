@@ -42,7 +42,7 @@ const Testimonials = (props: Props) => {
               // Content Card
               <div
                 key={index}
-                className=" flex flex-col items-start justify-center gap-6 border-none px-[42px] py-[51px] bg-monochrome90 relative"
+                className=" flex flex-col items-start justify-center gap-6 border-none px-[42px] py-[51px] bg-monochrome90 relative w-full"
               >
                 <TestimonialQuote styleProps={"absolute top-0 left-0"} />
                 <p className=" font-medium text-xl">{testimonial.desc}</p>

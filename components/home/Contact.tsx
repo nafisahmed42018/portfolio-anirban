@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import { Button } from "../ui/button";
 import { LucideMail } from "lucide-react";
@@ -26,11 +27,17 @@ const Contact = (props: Props) => {
         </h3>
         {/* Buttons */}
         <div className=" flex items-center justify-center gap-8 leading-[22.7px]">
-          <Button className="flex items-center gap-5 rounded-none px-7 h-12 font-medium text-lg text-monochrome00 bg-monochrome90 hover:text-monochrome90 hover:bg-monochrome00">
+          <Button 
+            className="flex items-center gap-5 rounded-none px-7 h-12 font-medium text-lg text-monochrome00 bg-monochrome90 hover:text-monochrome90 hover:bg-monochrome00 font-plusJakartaSans"
+            onClick={() => window.open("mailto:anirban.tasfin.azad@gmail.com", "_blank")}  
+          >
             <LucideMail className="!size-6" />
             <p>Email Me</p>
           </Button>
-          <Button className="rounded-none px-7 h-12 font-medium text-lg text-monochrome90 bg-monochrome00 border-[1.5px] border-monochrome90 hover:text-monochrome00 hover:bg-monochrome90">
+          <Button 
+            className="rounded-none px-7 h-12 font-medium text-lg text-monochrome90 bg-monochrome00 border-[1.5px] border-monochrome90 hover:text-monochrome00 hover:bg-monochrome90 font-plusJakartaSans"
+            onClick={() => window.open("https://wa.me/8801926214838", "_blank")}
+          >
             Direct Message
           </Button>
         </div>

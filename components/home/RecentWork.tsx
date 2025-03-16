@@ -14,7 +14,7 @@ const works = [
     type: "Website/SaaS",
     year: "2024",
     description:
-      "This victory will forever stand as a testament to the power of teamwork, the strength of character, and the universal language of sport that transcends boundaries and inspires millions.",
+      "invoicegenerator.biz is an Exact Match Domain website catering for multiple purpose of invoices including dashboard for management, shelving & analysis.",
   },
   {
     url: "/work-songjog.png",
@@ -55,7 +55,7 @@ const RecentWork = (props: Props) => {
             {works.map((work) => (
               <div
                 key={work.name}
-                className="flex flex-col items-center justify-start gap-6 max-w-[50%] hover:cursor-pointer"
+                className="flex flex-col items-center justify-start gap-6 max-w-[50%] hover:cursor-pointer w-full"
                 onClick={() => onWorkClick(work.pageUrl)}
               >
                 <Image
@@ -63,6 +63,7 @@ const RecentWork = (props: Props) => {
                   width={580}
                   height={435}
                   alt={work.name}
+                  className="rounded-[8px]"
                 />
                 <div className="flex items-center justify-between w-full">
                   <h4 className="text-[28px] leading-[37.8px] font-medium">
@@ -84,7 +85,7 @@ const RecentWork = (props: Props) => {
           {/* Button */}
           <Button
             onClick={() => onViewMore()}
-            className=" w-fit h-14 px-9 py-4 text-lg font-semibold bg-monochrome110 border-monochrome00 border-2 rounded-none hover:bg-monochrome00 hover:text-monochrome90"
+            className=" w-fit h-14 px-9 py-4 text-lg font-semibold font-plusJakartaSans bg-monochrome110 border-monochrome00 border-2 rounded-none hover:bg-monochrome00 hover:text-monochrome90 "
           >
             VIEW MORE
           </Button>

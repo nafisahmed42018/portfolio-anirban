@@ -132,7 +132,7 @@ export default function ContactBody() {
 
             <Button
               type="submit"
-              className="w-fit px-9 py-3 rounded-none hover:bg-matcha20 self-center bg-[#CEE9BF] text-monochrome110 font-semibold tracking-[5%] text-base leading-[20.16px]"
+              className="w-fit px-9 py-3 h-11 rounded-none hover:bg-matcha20 self-center bg-[#CEE9BF] text-monochrome110 font-semibold tracking-[5%] text-base font-plusJakartaSans"
             >
               SEND!
             </Button>

@@ -36,7 +36,7 @@ const Hero = (props: Props) => {
               alt="hero-quadrant"
             />
           </div>
-          <h1 className=" relative max-w-[700px] font-semibold text-[48px] leading-[60.48px]">
+          <h1 className=" relative max-w-[700px] font-[550] text-[48px] leading-[60.48px]">
             <span className=" font-semibold text-[72px] leading-[90.72px] pb-3">
               Hello, I am Anirban. <br />
             </span>

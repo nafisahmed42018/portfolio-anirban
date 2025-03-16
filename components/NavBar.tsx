@@ -26,7 +26,7 @@ const NavBar = (props: Props) => {
             <NavLink href='/about-me'>About Me</NavLink>            
             <Button
               variant={'resume'}
-              className="text-base flex items-center gap-2 p-0"
+              className="text-base flex items-center gap-2 p-0 font-plusJakartaSans"
               onClick={() => window.open("https://www.dropbox.com/home/Documents?preview=Resume_Anirban_Tasfin_Azad.pdf")}
             >
               Resume
@@ -35,7 +35,7 @@ const NavBar = (props: Props) => {
           </div>
           <Button
             variant={'common'}
-            className="xl:flex xl:items-center hidden text-base font-semibold h-10 px-7 "
+            className="xl:flex xl:items-center hidden text-base font-semibold h-10 px-7 font-plusJakartaSans"
             onClick={() => router.push('/contact')}
           >
             Let's Connect
