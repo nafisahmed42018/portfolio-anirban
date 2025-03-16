@@ -1,16 +1,16 @@
 import { LucideMouse } from "lucide-react";
 import Image from "next/image";
 import React from "react";
-import HeroSVG from "./HeroSVG";
+// import HeroSVG from "./HeroSVG";
 
 
 
 const Hero = () => {
   return (
     <section className=" w-full h-[92vh] text-monochrome90 bg-hero-pattern bg-cover bg-center relative">
-      <div className=" absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-0">
+      {/* <div className=" absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-0">
         <HeroSVG />
-      </div>
+      </div> */}
       <div className=" absolute w-full bottom-0 px-[120px]">
         <div className="container px-[120px] h-28 flex items-center justify-between">
           <p className="text-black font-normal text-base leading-[21.6px]">

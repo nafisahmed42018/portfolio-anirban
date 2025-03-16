@@ -59,7 +59,7 @@ const NavBar = () => {
           </Link>
         </div>
         <div className="flex items-center gap-[52px]">
-          <div className="text-link flex items-center gap-8">
+          <div className="text-link flex items-center gap-8 font-plusJakartaSans">
             <NavLink href="/work">Work</NavLink>
             <NavLink href="/about-me">About Me</NavLink>
             <Button
