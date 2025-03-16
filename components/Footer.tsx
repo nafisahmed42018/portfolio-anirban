@@ -5,9 +5,9 @@ import { Button } from "./ui/button";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 
-type Props = {};
 
-const Footer = (props: Props) => {
+
+const Footer = () => {
   const pathname = usePathname();
 
   const defaultPages = ["/", "/about-me", "/my-approach", "/work"];

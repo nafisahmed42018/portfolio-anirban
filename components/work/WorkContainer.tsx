@@ -1,7 +1,6 @@
 import React from "react";
 import WorkCard from "./WorkCard";
 
-type Props = {};
 
 const workData = [
   {
@@ -58,7 +57,7 @@ const workData = [
   },
 ];
 
-const WorkContainer = (props: Props) => {
+const WorkContainer = () => {
   return (
     <section className="w-full bg-monochrome110 text-monochrome00 ">
       <div className="container relative z-10">

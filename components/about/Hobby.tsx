@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
 
-type Props = {}
 
 const hobbyImages = [
   {
@@ -25,7 +24,7 @@ const hobbyImages = [
     alt: 'appreciating-art',
   },
 ]
-const Hobby = (props: Props) => {
+const Hobby = () => {
   return (
     <section className="w-full bg-[#F3F0E7] text-monochrome90 ">
       <div className="container px-[120px] pt-[101px] pb-[113px] flex flex-col gap-12">

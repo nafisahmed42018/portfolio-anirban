@@ -1,8 +1,6 @@
 import React from 'react'
 
-type Props = {}
-
-const NavLogo = (props: Props) => {
+const NavLogo = () => {
   return (
     <>
       <svg

@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import DashboardTab from "@/components/work/invoicegen/DashboardTab";
 import React from "react";
 
-type Props = {};
+
 const pageData = {
   title: "Invoicegenerator.biz",
   shortDesc:
@@ -19,7 +19,7 @@ const pageData = {
   client: "SOFTEKO",
   tools: "Figma, Adobe CC, Miro, Whimsical, Zeplin.",
 };
-const InvoiceGenWorkPage = (props: Props) => {
+const InvoiceGenWorkPage = () => {
   return (
     <main className="pt-[80px] flex flex-col items-center justify-center ">
       <Cover url="/invoicegen/cover.png" alt="invoicegen-cover" />

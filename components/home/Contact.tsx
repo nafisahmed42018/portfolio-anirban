@@ -4,9 +4,9 @@ import { Button } from "../ui/button";
 import { LucideMail } from "lucide-react";
 import HighFive from "./HighFive";
 
-type Props = {};
 
-const Contact = (props: Props) => {
+
+const Contact = () => {
   return (
     <section className="w-full bg-matchaBad text-monochrome00 rounded-tr-[60px] rounded-tl-[60px] relative">
       <div className=" absolute bg-monochrome110 w-full h-full -z-10"></div>

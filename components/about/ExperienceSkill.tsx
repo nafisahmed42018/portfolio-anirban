@@ -1,6 +1,5 @@
 import React from "react";
 
-type Props = {};
 
 const design = [
   {
@@ -32,7 +31,7 @@ const tech = [
   },
 ];
 
-const ExperienceSkill = (props: Props) => {
+const ExperienceSkill = () => {
   return (
     <div className=" flex flex-col items-start justify-center gap-6 text-monochrome90">
       <h3 className=" font-semibold text-[32px] leading-[40.32px]">Skills</h3>

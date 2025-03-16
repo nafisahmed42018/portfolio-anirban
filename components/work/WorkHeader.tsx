@@ -1,6 +1,5 @@
 import React from "react";
 
-type Props = {};
 
 const workTags = [
   { name: "Case Study" },
@@ -11,7 +10,7 @@ const workTags = [
   { name: "UX Design" },
 ];
 
-const WorkHeader = (props: Props) => {
+const WorkHeader = () => {
   return (
     <section className="w-full">
       <div className="container px-[120px] py-[80px] flex flex-col items-start justify-center gap-6">

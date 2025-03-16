@@ -1,6 +1,6 @@
 import React from "react";
 
-type Props = {};
+
 const jobExp = [
   {
     name: "Softeko",
@@ -48,7 +48,7 @@ const jobExp = [
       "Built a course management platform prototype that made onboarding faster and courses easier to access. Frontend Website development with JavaScript and JSX Element. Rest API integration and Data pipelining on Mongo",
   },
 ];
-const ExperienceJob = (props: Props) => {
+const ExperienceJob = () => {
   return (
     <div className="w-full flex flex-col items-start justify-center gap-9 text-monochrome90">
       {/* Experience Body Card */}

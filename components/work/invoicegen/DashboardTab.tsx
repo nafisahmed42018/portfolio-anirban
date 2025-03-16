@@ -1,19 +1,9 @@
 import React from "react";
-import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Figure from "@/components/projects/Figure";
 
-type Props = {};
+
 
 const dashboardData = [
   {
@@ -66,7 +56,7 @@ const dashboardData = [
   },
 ];
 
-const DashboardTab = (props: Props) => {
+const DashboardTab = () => {
   return (
     <Tabs defaultValue="invoices" className="w-full transition-all">
       <TabsList className="flex flex-wrap w-full p-1 items-center justify-around  h-full border-[1.5px] border-matchaBase rounded-full bg-transparent">

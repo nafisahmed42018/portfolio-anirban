@@ -4,9 +4,8 @@ import Intro from '@/components/about/Intro'
 import Journey from '@/components/about/Journey'
 import React from 'react'
 
-type Props = {}
 
-const AboutPage = (props: Props) => {
+const AboutPage = () => {
   return (
     <main className="pt-[80px] flex flex-col items-center justify-center ">
       <Intro />

@@ -4,10 +4,9 @@ import ProjectInfo from "@/components/projects/ProjectInfo";
 import ProjectPara from "@/components/projects/ProjectPara";
 import Image from "next/image";
 import Figure from "@/components/projects/Figure";
-import { Button } from "@/components/ui/button";
 import React from "react";
 
-type Props = {};
+
 const pageData = {
   title: "Safewheel Redesign",
   shortDesc: "A wide range of healthcare products at your doorstep!",
@@ -19,7 +18,7 @@ const pageData = {
   client: "Safewheel LTD",
   tools: "Figma, Miro, Zeplin, Invision, Jira.",
 };
-const SafewheelWorkPage = (props: Props) => {
+const SafewheelWorkPage = () => {
   return (
     <main className="pt-[80px] flex flex-col items-center justify-center ">
       <Cover url="/safewheel/cover.png" alt="safewheel-cover" />

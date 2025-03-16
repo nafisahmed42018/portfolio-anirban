@@ -8,7 +8,7 @@ import Figure from "@/components/projects/Figure";
 import Image from "next/image";
 import React from "react";
 
-type Props = {};
+
 const pageData = {
   title: "Oxfo.tech",
   shortDesc: "Your Full-stack engineering platform.",
@@ -19,7 +19,7 @@ const pageData = {
   client: "Safewheel LTD",
   tools: "Figma, Miro, Zeplin.",
 };
-const OxfoTechWorkPage = (props: Props) => {
+const OxfoTechWorkPage = () => {
   return (
     <main className="pt-[80px] flex flex-col items-center justify-center ">
       <Cover url="/oxfotech/cover.png" alt="oxfotech-cover" />

@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
 
-type Props = {}
 
-const Intro = (props: Props) => {
+
+const Intro = () => {
   return (
     <section className=" container px-[120px] py-[80px] flex items-center justify-between gap-[128px]">
       <div className=" text-monochrome90 font-normal text-[16px] leading-[24px] flex flex-col items-start justify-center gap-3 max-w-[560px]">

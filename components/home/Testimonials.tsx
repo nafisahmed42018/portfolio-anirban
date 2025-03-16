@@ -2,7 +2,7 @@ import React from "react";
 import TestimonialQuote from "./TestimonialQuote";
 import Image from "next/image";
 
-type Props = {};
+
 
 const testimonials = [
   {
@@ -21,7 +21,7 @@ const testimonials = [
   },
 ];
 
-const Testimonials = (props: Props) => {
+const Testimonials = () => {
   return (
     <section className="w-full bg-monochrome110 text-monochrome00">
       <div className=" container relative z-10">

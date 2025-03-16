@@ -3,9 +3,9 @@ import Image from "next/image";
 import React from "react";
 import HeroSVG from "./HeroSVG";
 
-type Props = {};
 
-const Hero = (props: Props) => {
+
+const Hero = () => {
   return (
     <section className=" w-full h-[92vh] text-monochrome90 bg-hero-pattern bg-cover bg-center relative">
       <div className=" absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-0">

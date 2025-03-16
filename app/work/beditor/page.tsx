@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import React from "react";
 
-type Props = {};
+
 
 const pageData = {
   title: "Beditor",
@@ -19,7 +19,7 @@ const pageData = {
   duration: "3 weeks + 2 week",
   desc: "The project was executed in two steps. I have re-iterated the whole journey afterwards. The second iteration is marked in the case study.",
 };
-const BeditorWorkPage = (props: Props) => {
+const BeditorWorkPage = () => {
   return (
     <main className="pt-[80px] flex flex-col items-center justify-center ">
       <Cover url="/beditor/cover.png" alt="beditor-cover" />

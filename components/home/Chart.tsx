@@ -1,30 +1,16 @@
 "use client";
 
-import { TrendingUp } from "lucide-react";
 import {
   Area,
   AreaChart,
-  CartesianGrid,
   ReferenceLine,
   ResponsiveContainer,
   XAxis,
   YAxis,
 } from "recharts";
 
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import {
-  ChartConfig,
-  ChartContainer,
-  ChartTooltip,
-  ChartTooltipContent,
-} from "@/components/ui/chart";
+
+
 const chartData = [
   { category: "Front-end Development", level: 0.1 },
   { category: "UX Research", level: 0.3 },
@@ -36,12 +22,7 @@ const chartData = [
   { category: "", level: 0.1 },
 ];
 
-const chartConfig = {
-  desktop: {
-    label: "Desktop",
-    color: "hsla(var(--chart-1))",
-  },
-} satisfies ChartConfig;
+
 
 export function Chart() {
   return (

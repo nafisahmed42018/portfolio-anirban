@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
 
-type Props = {}
 
-const Journey = (props: Props) => {
+
+const Journey = () => {
   return (
     <section className="w-full bg-[#BAD7AA3D] text-monochrome90 ">
       <div className="container px-[120px] py-[80px] flex items-start justify-center gap-9">

@@ -3,7 +3,6 @@ import React from 'react'
 import { Button } from '../ui/button'
 import { LucideArrowRight } from 'lucide-react'
 
-type Props = {}
 
 const services = [
   {
@@ -26,7 +25,7 @@ const services = [
   },
 ]
 
-const Service = (props: Props) => {
+const Service = () => {
   return (
     <section className="container px-[120px] flex flex-col gap-10 items-start justify-center">
       {/* Section Title */}

@@ -6,9 +6,8 @@ import { Button } from "./ui/button";
 import { LucideSquareArrowOutUpRight } from "lucide-react";
 import { useRouter } from "next/navigation";
 import NavLink from "./NavLink";
-type Props = {};
 
-const NavBar = (props: Props) => {
+const NavBar = () => {
   const [isSidebarActive, setIsSidebarActive] = useState(false);
   const router = useRouter();
   useEffect(() => {

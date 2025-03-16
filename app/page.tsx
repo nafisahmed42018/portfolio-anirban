@@ -5,8 +5,7 @@ import RecentWork from '@/components/home/RecentWork'
 import Service from '@/components/home/Service'
 import SkillChart from '@/components/home/SkillChart'
 import Testimonials from '@/components/home/Testimonials'
-import Head from 'next/head'
-import Image from 'next/image'
+
 
 export default function Home() {
   return (

@@ -1,8 +1,7 @@
 import React from "react";
 
-type Props = {};
 
-const HeroSVG = (props: Props) => {
+const HeroSVG = () => {
   return (
     <svg
       width="1205"

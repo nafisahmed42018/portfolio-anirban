@@ -1,9 +1,9 @@
 import React from 'react'
 import { Chart } from './Chart'
 
-type Props = {}
 
-const SkillChart = (props: Props) => {
+
+const SkillChart = () => {
   return (
     <section className=" container px-[120px] pb-[40px] flex flex-col gap-10 items-start justify-center">
       <h2 className=" font-medium text-4xl leading-[45.3px] text-monochrome90">

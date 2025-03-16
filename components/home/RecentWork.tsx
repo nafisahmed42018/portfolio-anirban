@@ -4,7 +4,7 @@ import Image from "next/image";
 import React from "react";
 import { Button } from "../ui/button";
 import { useRouter } from "next/navigation";
-type Props = {};
+
 
 const works = [
   {
@@ -27,7 +27,7 @@ const works = [
   },
 ];
 
-const RecentWork = (props: Props) => {
+const RecentWork = () => {
   const router = useRouter();
 
   const onViewMore = () => {

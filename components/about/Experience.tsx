@@ -3,9 +3,9 @@ import ExperienceJob from "./ExperienceJob";
 import ExperienceEducation from "./ExperienceEducation";
 import ExperienceSkill from "./ExperienceSkill";
 
-type Props = {};
 
-const Experience = (props: Props) => {
+
+const Experience = () => {
   return (
     <section className="w-full">
       <div className="container px-[120px] pt-[80px] pb-[108px] flex flex-col items-start justify-center gap-[84px]">
