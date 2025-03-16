@@ -1,19 +1,19 @@
-'use client'
-import Image from 'next/image'
-import React from 'react'
-import { Button } from '../ui/button'
-import { useRouter } from 'next/navigation';
+"use client";
+import Image from "next/image";
+import React from "react";
+import { Button } from "../ui/button";
+import { useRouter } from "next/navigation";
 
 type workDataProps = {
-  workTitle: string
-  workHead: string
-  clientName: string
-  workDesc: string
-  projectType: string
-  workImageURL: string
-  href: string
-}
-
+  workTitle: string;
+  workHead: string;
+  clientName: string;
+  workDesc: string;
+  projectType: string;
+  workImageURL: string;
+  href: string;
+  key: string;
+};
 
 const WorkCard = ({
   workTitle,
@@ -22,15 +22,16 @@ const WorkCard = ({
   workDesc,
   projectType,
   workImageURL,
-  href
+  href,
+  key,
 }: workDataProps) => {
   const router = useRouter();
 
-  const handleNavigation = (href:string) => {
+  const handleNavigation = (href: string) => {
     router.push(`work/${href}`); // Navigate to /dashboard
   };
   return (
-    <div className="flex items-start justify-center gap-9 text-white">
+    <div key={key} className="flex items-start justify-center gap-9 text-white">
       {/* Left Section */}
       <div className="flex flex-col items-start justify-center gap-6 flex-[7]">
         <div className=" flex items-center justify-center gap-6">
@@ -69,7 +70,13 @@ const WorkCard = ({
       <div className="flex flex-col items-start justify-center gap-6 flex-[11]">
         {/* Work Image */}
         <div className="">
-          <Image src={workImageURL} width={720} height={540} alt={''}  className='rounded-[8px]'/>
+          <Image
+            src={workImageURL}
+            width={720}
+            height={540}
+            alt={""}
+            className="rounded-[8px]"
+          />
         </div>
         {/* Work Type */}
         <div className="flex items-center justify-between w-full">
@@ -88,16 +95,16 @@ const WorkCard = ({
             </h4>
           </div>
           <Button
-            variant={'common'}
+            variant={"common"}
             className="h-full rounded-[100px] px-8 py-[14px] font-semibold text-base leading-[20.16px]"
-            onClick={()=>handleNavigation(href)}
+            onClick={() => handleNavigation(href)}
           >
             View Case Study
           </Button>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default WorkCard
+export default WorkCard;

@@ -1,15 +1,15 @@
-import React from 'react'
+import React from "react";
 
-type Props = {}
+type Props = {};
 
 const workTags = [
-  { name: 'Case Study' },
-  { name: 'UI Design' },
-  { name: 'Interaction Design' },
-  { name: 'UX Research' },
-  { name: 'Information Architecture' },
-  { name: 'UX Design' },
-]
+  { name: "Case Study" },
+  { name: "UI Design" },
+  { name: "Interaction Design" },
+  { name: "UX Research" },
+  { name: "Information Architecture" },
+  { name: "UX Design" },
+];
 
 const WorkHeader = (props: Props) => {
   return (
@@ -25,8 +25,11 @@ const WorkHeader = (props: Props) => {
             of each and every one of them.
           </p>
           <div className="flex items-center justify-start gap-4">
-            {workTags.map((tag) => (
-              <div className="border-[1.5px] border-matchaBase px-4 py-1 rounded-[30px] ">
+            {workTags.map((tag, index) => (
+              <div
+                key={index}
+                className="border-[1.5px] border-matchaBase px-4 py-1 rounded-[30px] "
+              >
                 <p className="text-matchaBase text-base font-normal leading-[21.6px]">
                   {tag.name}
                 </p>
@@ -36,7 +39,7 @@ const WorkHeader = (props: Props) => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default WorkHeader
+export default WorkHeader;

@@ -1,39 +1,36 @@
-import React from 'react'
+import React from "react";
 
-type Props = {}
+type Props = {};
 
 const design = [
   {
-    type: 'Theoretic',
-    desc:
-      'Color psychology, Heuristics, Design principles, Visual hierarchy, WCAG 2.1',
+    type: "Theoretic",
+    desc: "Color psychology, Heuristics, Design principles, Visual hierarchy, WCAG 2.1",
   },
   {
-    type: 'Tools',
-    desc:
-      'Figma, Whimsical, Miro, Maze, Zeplin, Protopie, Jitter, Lucid Chart.',
+    type: "Tools",
+    desc: "Figma, Whimsical, Miro, Maze, Zeplin, Protopie, Jitter, Lucid Chart.",
   },
   {
-    type: 'Techniques',
-    desc:
-      'User stories, Competitive research, User flows, Wireframing, Prototyping, Journey maps, Design systems, Gamification.',
+    type: "Techniques",
+    desc: "User stories, Competitive research, User flows, Wireframing, Prototyping, Journey maps, Design systems, Gamification.",
   },
-]
+];
 
 const tech = [
   {
-    type: 'Languages',
-    desc: 'C, C#, Python, JavaScript',
+    type: "Languages",
+    desc: "C, C#, Python, JavaScript",
   },
   {
-    type: 'Frameworks & Services',
-    desc: 'React, Next, Firebase, MySQL, Mongo, AWS, GDscript.',
+    type: "Frameworks & Services",
+    desc: "React, Next, Firebase, MySQL, Mongo, AWS, GDscript.",
   },
   {
-    type: 'Collaborative',
-    desc: 'Git, Notion, Slack, Jira, Trello, Air table.',
+    type: "Collaborative",
+    desc: "Git, Notion, Slack, Jira, Trello, Air table.",
   },
-]
+];
 
 const ExperienceSkill = (props: Props) => {
   return (
@@ -42,11 +39,14 @@ const ExperienceSkill = (props: Props) => {
       <div className=" flex flex-col items-start justify-center gap-3">
         <h4 className=" font-semibold text-[24px] leading-[30.24px]">Design</h4>
         <div className=" flex flex-col items-start justify-center gap-2">
-          {design.map((data) => (
-            <p className=" text-[#656565] font-semibold text-[16px] leading-[21.6px] max-w-[680px]">
+          {design.map((data, index) => (
+            <p
+              key={index}
+              className=" text-[#656565] font-semibold text-[16px] leading-[21.6px] max-w-[680px]"
+            >
               <span className=" text-matchaBase font-semibold text-[16px] leading-[21.6px]">
                 {data.type}
-              </span>{' '}
+              </span>{" "}
               - {data.desc}
             </p>
           ))}
@@ -55,18 +55,21 @@ const ExperienceSkill = (props: Props) => {
       <div className="flex flex-col items-start justify-center gap-3">
         <h4 className=" font-semibold text-[24px] leading-[30.24px]">Tech</h4>
         <div className=" flex flex-col items-start justify-center gap-2">
-          {tech.map((data) => (
-            <p className=" text-[#656565] font-semibold text-[16px] leading-[21.6px] max-w-[680px]">
+          {tech.map((data, index) => (
+            <p
+              key={index}
+              className=" text-[#656565] font-semibold text-[16px] leading-[21.6px] max-w-[680px]"
+            >
               <span className=" text-matchaBase font-semibold text-[16px] leading-[21.6px]">
                 {data.type}
-              </span>{' '}
+              </span>{" "}
               - {data.desc}
             </p>
           ))}
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ExperienceSkill
+export default ExperienceSkill;

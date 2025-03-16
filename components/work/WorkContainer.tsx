@@ -71,6 +71,7 @@ const WorkContainer = (props: Props) => {
         <div className="p-[120px] flex flex-col items-center justify-center gap-[180px]">
           {workData.map((work) => (
             <WorkCard
+              key={work.workTitle}
               workTitle={work.workTitle}
               workHead={work.workHead}
               clientName={work.clientName}

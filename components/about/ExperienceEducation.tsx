@@ -26,7 +26,7 @@ const ExperienceEducation = (props: Props) => {
         Education
       </h3>
       {education.map((education) => (
-        <div className=" flex flex-col items-start justify-center gap-1">
+        <div key={education.degree} className=" flex flex-col items-start justify-center gap-1">
           <p className="pb-1 font-medium text-[16px] leading-[20.16px]">
             {education.session}
           </p>
